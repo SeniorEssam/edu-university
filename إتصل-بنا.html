@@ -1,0 +1,563 @@
+﻿
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00A8DA">
+    <meta property="og:site_name" content="El Minya Higher Institute of Engineering & Technology">
+    <meta property="og:image" content="https://mhiet.edu.eg/images/arSocialShare.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:url" content="https://mhiet.edu.eg/%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="arCSS/s.css">
+    
+    <title>إتصل بنا</title>
+    <meta name="description" content="إتصل بنا">
+    <meta name="keywords" content="إتصل بنا، نموذج الإتصل">
+    <meta property="og:title" content="إتصل بنا">
+    <meta property="og:description" content="إتصل بنا">
+    <style>
+        .tip-yellowsimple{z-index:1000;text-align:left;border:1px solid #c7bf93;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;min-width:50px;max-width:300px;color:#000;background-color:#fff9c9;padding:6px 8px}
+        .tip-yellowsimple .tip-inner{font:14px/16px STC,tahoma,arial}
+        .tip-yellowsimple .tip-arrow-top{margin-top:-6px;margin-left:-5px;top:0;left:50%;width:9px;height:6px;background:url(/images/mail/tip-yellowsimple_arrows.gif) no-repeat}
+        .tip-yellowsimple .tip-arrow-right{margin-top:-4px;margin-left:0;top:50%;left:100%;width:6px;height:9px;background:url(/images/mail/tip-yellowsimple_arrows.gif) no-repeat -9px 0}
+        .tip-yellowsimple .tip-arrow-bottom{margin-top:0;margin-left:-5px;top:100%;left:50%;width:9px;height:6px;background:url(/images/mail/tip-yellowsimple_arrows.gif) no-repeat -18px 0}
+        .tip-yellowsimple .tip-arrow-left{margin-top:-4px;margin-left:-6px;top:50%;left:0;width:6px;height:9px;background:url(/images/mail/tip-yellowsimple_arrows.gif) no-repeat -27px 0}
+        #mail{width:100%;max-width:528px;height:612px;margin:0 auto;position:absolute;bottom:0;left:0;z-index:10;overflow:hidden;direction:ltr}
+        #mailDiv{max-width:528px;height:auto;margin:0 auto;position:relative;margin-top:20px}
+        #mailFrontTop{max-width:528px;height:auto;z-index:20;position:relative}
+        #mailFrontBtm{max-width:528px;height:auto;z-index:20;position:relative}
+        .sizeIt{max-width:100%;height:auto;display:block}
+        #flipper{margin-bottom:-1px}
+        #letter{background: #f7f2ec url(/images/mail/letterBG.png);overflow:hidden;height:auto;width:80%;left:50%;margin-left:-40%;padding:20px;border: 1px solid #fff;border-radius:4px;-moz-border-radius:4px;;box-shadow:0 0 10px #8f9196;-moz-box-shadow:0 0 10px #8f9196;-webkit-box-shadow:0 0 10px #8f9196;-o-box-shadow:0 0 10px #8f9196;position:absolute;bottom:-290px;direction:rtl}
+        #mailTop{max-width:528px;height:auto;z-index:0;position:relative}
+        #alert{font:10pt "STC",tahoma,arial;color:#fff;position:absolute;z-index:31;max-width:528px;text-align:center;top:0;padding-top:20px;display:none;height:176px;background:url(/images/mail/stamp.png) no-repeat center center;width:100%}
+        label {font:10pt "STC",tahoma,arial;margin:5px 0 0 0 !important;font-size:14px;color:#7c7873;text-transform: uppercase;text-shadow: 0px 1px 0px #fff;display:block;float:right;width:100%}
+        #country,input[type=text], textarea {text-align:right;font:13px/36px "STC",tahoma,arial;color:#464545;background:none;width:100%;height:36px;padding:0 10px;margin:0;border:1px solid #e2e2e2;-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow: inset 0px 0px 1px #726959;-webkit-box-shadow:  inset 0px 0px 1px #b3a895;box-shadow:  inset 0px 0px 1px #b3a895;margin-bottom:10px}	
+        textarea {height:80px;padding-top:5px;width:100%;max-width:380px;max-height:80px;min-width:100%;min-height:80px;display:block;float:right;line-height:20px;overflow-x: hidden}
+        #country:focus, textarea:focus, input[type=text]:focus {background:#fbf9ec}
+        #send{display:block;max-width:528px;position:absolute;display:none;width:100%}
+        #send a{box-shadow: 1px 1px 1px #9d9d9d, inset 0px 0px 27px #fff;position:relative;font:bold 13px "STC",tahoma,arial;text-decoration:none;color:#1575c1 !important;text-shadow:0 1px 0 #fff;padding:5px;text-align:center;width:90px;display:block;margin:0 auto;border:1px solid #f5f5f5;border-radius:3px;cursor:pointer !important;transition:transform .3s ease-out}
+        #send a:hover {color:#a8375e !important;transform:scale(1.1)}
+        .validator{display:block;color:#de3f5d;font:normal 9pt "STC",tahoma,arial;background:url(/images/mail/err.png) no-repeat right top;padding-right:22px;line-height:20px;height:20px;direction:rtl}
+        #sending{color:#518476;font-size:15px;display:none;text-align:center}
+        .lHalf{float:right;width:100%;position:relative}
+        .lHalf, .rHalf{width:48%;float:left}
+        .rHalf{float:right}
+        .ltr{text-align:left !important;direction:ltr}
+        #publish{margin-bottom:10px;border:1px solid #e2e2e2;-moz-box-shadow: inset 0px 0px 1px #726959;-webkit-box-shadow:  inset 0px 0px 1px #b3a895;box-shadow:  inset 0px 0px 1px #b3a895;width:100%;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;overflow:hidden;height:36px}
+        #publish span{height:36px;width:100%;font-size:9pt;line-height:36px;display:block;float:left;color:#FFF;text-align:center;cursor:pointer}
+        #on{background:#538678}
+        #off{background:#A74343}
+        #preloader{position:absolute;left:-999px;top:-999px}
+        #cType{position:absolute;top:0;left:0;z-index:-1}
+        #captchaCont {background:#f7f2ec url(/images/mail/letterBG.png);overflow:hidden;position:absolute;z-index:9999;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;text-align:center;box-shadow:0 0 10px #8f9196;-moz-box-shadow:0 0 10px #8f9196;-webkit-box-shadow:0 0 10px #8f9196;-o-box-shadow:0 0 10px #8f9196;left:50%;margin-left:-47%;width:94%;top:-200px;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0}
+        #press{font-size:11pt;padding:2px;color:#795548}
+        #reCaptcha{display:inline-block;margin:0 auto}
+        @media only screen and (min-width:0) and (max-width:480px) {#alert {font-size:9pt;padding-top:10px;background:url(/images/mail/sstamp.png) no-repeat center center}}
+    </style>
+
+    <style>#banner{background-image: url(/images/header/ar/202/1202104130338198226672.jpg)}</style>
+</head>
+<body>
+    <div class="dropMenu"><ul class="menu" id="topDropMenu"></ul></div>
+    <div class="container">
+        <header>
+            <div class="header section">
+                
+                <div id="topLeftLinks">
+                    <a href="contact-us.html">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#english"></use></svg>
+                        <span>English Interface</span>
+                    </a>
+                    <a href="mailto:admin@mhiet.edu.eg">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#email"></use></svg>
+                        <span>admin@mhiet.edu.eg</span>
+                    </a>
+                    <a href="tel:002086-2290608">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#telephone"></use></svg>
+                        <span>086-2290608</span>
+                    </a>
+                </div>
+                <a href="index-1.htm" id="logo"><img src="images/arabic-logo.png" alt="المعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة" width="236" height="76"></a>
+                <div class="hamDiamod"></div>
+                <svg class="ham" viewbox="0 0 100 100" width="60">
+                    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                    <path class="line middle" d="m 30,50 h 40"></path>
+                    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                </svg>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li class="parentMenu">
+                    <span class="dropList">عن المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1000/%D9%86%D8%B4%D8%A3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">نشأة المعهد</a></li>
+                        <li><a href="arabic/page/1001/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9.html">نظام الدراسة</a></li>
+                        <li><a href="arabic/page/1010/%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D8%AF-%D9%88-%D8%A7%D9%84%D9%88%D9%83%D9%84%D8%A7%D8%A1.html">مكتب العميد والوكلاء</a></li>
+                        <li><a href="arabic/page/1018/%D8%A7%D9%84%D8%B1%D8%A4%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D9%88-%D8%A7%D9%84%D8%A3%D9%87%D8%AF%D8%A7%D9%81.html">الرؤية والرسالة والاهداف</a></li>
+                        <li><a href="arabic/page/1022/%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9.html">المجلة العلمية</a></li>
+                        <li><a href="arabic/page/1015/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9.html">خدمة المجتمع</a></li>
+                        <li><a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a></li>
+                        <li><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديو</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA.html">الأخبار والأحداث والإعلانات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أقسام المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1004/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9.html">قسم العلوم الأساسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1001/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D8%A9.html">قسم الهندسة المدنية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1000/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9.html">قسم الهندسة المعمارية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1002/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA.html">قسم الهندسة الكهربية والحاسبات</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1003/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D8%AA%D8%B1%D9%88%D9%86%D9%83%D8%B3.html">قسم الهندسة الميكانيكية – ميكاترونكس</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أعضاء هيئة التدريس</span>
+                    <ul class="subMenu">
+                        <li><a href="https://staffportal.mhiet.edu.eg" target="_blank">مواقع أعضاء هيئة التدريس</a></li>
+                        <li><a href="https://www.researchgate.net/institution/El_Minya_High_Institute_For_Engineering_and_Technology" target="_blank">MHIET ResearchGate</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الالتحاق بالمعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1017/%D8%A7%D9%84%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%82-%D9%84%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">الالتحاق للدراسة بالمعهد</a></li>
+                        <li><a href="arabic/page/1020/%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الرسوم الدراسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%B1%D8%B1%D8%A9.html">الاسئلة الشائعة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الطلاب والخريجون</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D9%88-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%88%D9%86.html">تسجيل الدخول</a></li>
+                        <li><a href="%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.html">المكتبة الإلكترونية</a></li>
+                        <li><a href="arabic/page/1006/%D8%A5%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">إتحاد الطلاب</a></li>
+                        <li><a href="arabic/page/1009/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">رعاية الطلاب</a></li>
+                        <li><a href="arabic/page/1002/%D8%A7%D9%84%D8%B3%D9%83%D9%86.html">السكن</a></li>
+                        <li><a href="arabic/page/1003/%D8%A7%D9%84%D9%86%D9%82%D9%84-%D9%88-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A7%D8%AA.html">النقل</a></li>
+                        <li><a href="arabic/page/1004/%D8%A7%D9%84%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A.html">التأمين الطبي</a></li>
+                        <li><a href="arabic/page/1005/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.html">التدريب</a></li>
+                        <li><a href="arabic/page/1016/%D9%85%D9%83%D8%AA%D8%A8-%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">مكتب الخريجين</a></li>
+                        <li><a href="%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC.html">مشاريع التخرج</a></li>
+                        <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجودة والاعتماد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/quality-certification/1007/about-quality.html">عن الجودة</a></li><li><a href="arabic/quality-certification/1008/quality-unit-committees.html">لجان وحدة الجودة</a></li><li><a href="arabic/quality-certification/1009/opinion-polls-and-their-results.html">نماذج استطلاع الراي</a></li><li><a href="arabic/quality-certification/1010/quality-attachments.html">الإصدارات والمرفقات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">التوظيف</span>
+                    <ul class="subMenu">
+                        <li><a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a></li>
+                        <li><a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a></li>
+                        <li><a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجداول</span>
+                    <ul class="subMenu">
+                      <li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1005/%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الجداول الدراسية</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1006/%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جداول إمتحانات نهاية الفصل</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1007/%D8%AC%D8%AF%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D9%86%D8%AA%D8%B5%D9%81-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جدول إمتحانات منتصف الفصل</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الإدارات</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1011/%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA.html">الحسابات</a></li>
+                        <li><a href="arabic/page/1007/%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">شئون الطلاب</a></li>
+                        <li><a href="arabic/page/1012/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9.html">الموارد البشرية</a></li>
+                        <li><a href="arabic/page/1014/%D8%A7%D9%84%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9.html">الشئون القانونية</a></li>
+                        <li><a href="arabic/page/1013/%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9.html">العلاقات العامة</a></li>
+                        <li><a href="arabic/page/1008/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.html">تكنولوجيا المعلومات</a></li>
+                        <li><a href="arabic/page/1021/%D9%88%D8%AD%D8%AF%D8%A9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%B2%D9%85%D8%A7%D8%AA-%D9%88-%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.html">وحدة إدارة الأزمات والكوارث</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">مرفقات هامة</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%D8%A7%D8%AA/1004/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8.html">دليل الطالب</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="banner">
+        <div id="headHD">
+            <div class="diamondTails diamondTailsLight">
+                <span id="headSpan" class="circle">إتــــصل بنــــا</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height:700px;text-align:right">
+    <div style="width:100%">
+    <div class="rightContent">
+        <h1>
+           نموذج الإتصال
+        </h1>
+        <div id="bodyRight">
+            
+   <div id="preloader">
+        <img src="/images/mail/frontBG.png">
+        <img src="/images/mail/frontTop.png">
+        <img src="/images/mail/frontBtmAr.png">
+        <img src="/images/mail/letterBG.png">
+        <img src="/images/mail/stamp.png">
+    </div>
+<div class="clear"></div>
+<div id="mailDiv">
+        <div id="mailTop"><div id="alert">تم الإرسال بنجاح, سنتواصل معك فى أقرب فرصة.</div><img src="/images/mail/top.png" id="flipper" alt="Top" class="sizeIt"></div>
+        <img src="/images/mail/frontBG.png" class="sizeIt" alt="Front background" style="position:absolute">
+        <div id="mail">
+            <div id="letter">
+                <div id="captchaCont">
+                    <div id="press">إضغط على المربع لإتمام الإرسال</div>
+                    <div id="reCaptcha"></div>
+                </div>
+                <input type="text" id="name" maxlength="50" placeholder="الاسم" tabindex="1">
+
+                <div class="rHalf">
+                    <input type="text" id="eml" maxlength="100" class="ltr" placeholder="الإيميل" tabindex="2">
+                </div>
+                <div class="lHalf">
+                    <select id="country" tabindex="5"><option value="افغانستان">افغانستان</option><option value="البانيا">البانيا</option><option value="الجزائر">الجزائر</option><option value="انجولا">انجولا</option><option value="انتيجا و بربودة">انتيجا و بربودة</option><option value="الارجنتين">الارجنتين</option><option value="ارمينيا">ارمينيا</option><option value="اروبا">اروبا</option><option value="استراليا">استراليا</option><option value="النمسا">النمسا</option><option value="اذربيجان">اذربيجان</option><option value="جزر البهامس">جزر البهامس</option><option value="البحرين">البحرين</option><option value="بنجلاديش">بنجلاديش</option><option value="بربادوس">بربادوس</option><option value="بيلاروس">بيلاروس</option><option value="بلجيكا">بلجيكا</option><option value="بليز">بليز</option><option value="بنين">بنين</option><option value="برمودا">برمودا</option><option value="بوتان">بوتان</option><option value="بوليفيا">بوليفيا</option><option value="البوسنة و الهرسك">البوسنة و الهرسك</option><option value="بتسوانا">بتسوانا</option><option value="البرازيل">البرازيل</option><option value="سلطنة بروناي">سلطنة بروناي</option><option value="بلغاريا">بلغاريا</option><option value="بوركينا فاسو">بوركينا فاسو</option><option value="بروندي">بروندي</option><option value="كمبوديا">كمبوديا</option><option value="الكاميرون">الكاميرون</option><option value="كندا">كندا</option><option value="كاب فيرد">كاب فيرد</option><option value="جمهورية افريقيا الوسطي">جمهورية افريقيا الوسطي</option><option value="تشاد">تشاد</option><option value="تشيلي">تشيلي</option><option value="الصين">الصين</option><option value="كولومبيا">كولومبيا</option><option value="كومورس">كومورس</option><option value="كونجو">كونجو</option><option value="جزر الكوك">جزر الكوك</option><option value="كوستا ريكا">كوستا ريكا</option><option value="ساحل العاج">ساحل العاج</option><option value="كرواتيا">كرواتيا</option><option value="كوبا">كوبا</option><option value="قبرص">قبرص</option><option value="جمهورية التشيك">جمهورية التشيك</option><option value="الدانمرك">الدانمرك</option><option value="جيبوتي">جيبوتي</option><option value="الدرمبتيكان">الدرمبتيكان</option><option value="جمهورية الدومينيكان">جمهورية الدومينيكان</option><option value="تيمور الشرقية">تيمور الشرقية</option><option value="اكوادور">اكوادور</option><option selected="selected" value="مصر">مصر</option><option value="السلفادور">السلفادور</option><option value="غنيا الاستوائية">غنيا الاستوائية</option><option value="اريتريا">اريتريا</option><option value="استونيا">استونيا</option><option value="اثيوبيا">اثيوبيا</option><option value="جزر فوكلاند">جزر فوكلاند</option><option value="فيجي">فيجي</option><option value="فنلندا">فنلندا</option><option value="فرنسا">فرنسا</option><option value="جابون">جابون</option><option value="جامبيا">جامبيا</option><option value="جورجيا">جورجيا</option><option value="المانيا">المانيا</option><option value="غانا">غانا</option><option value="جبل طارق">جبل طارق</option><option value="اليونان">اليونان</option><option value="غرناطة">غرناطة</option><option value="جوينا">جوينا</option><option value="هايتي">هايتي</option><option value="هندوراس">هندوراس</option><option value="هونج كونج">هونج كونج</option><option value="المجر">المجر</option><option value="جوينا بيسو">جوينا بيسو</option><option value="جونا">جونا</option><option value="ايسلندا">ايسلندا</option><option value="الهند">الهند</option><option value="اندونيسيا">اندونيسيا</option><option value="ايران">ايران</option><option value="العراق">العراق</option><option value="ايرلندا">ايرلندا</option><option value="اسرائيل">اسرائيل</option><option value="ايطاليا">ايطاليا</option><option value="اليابان">اليابان</option><option value="الاردن">الاردن</option><option value="كازاغستان">كازاغستان</option><option value="كينيا">كينيا</option><option value="كيريباتى">كيريباتى</option><option value="كوريا الشمالية">كوريا الشمالية</option><option value="كورياالجنوبية">كورياالجنوبية</option><option value="الكويت">الكويت</option><option value="كازخستان">كازخستان</option><option value="لاتفيا">لاتفيا</option><option value="جامايكا">جامايكا</option><option value="لبنان">لبنان</option><option value="ليستو">ليستو</option><option value="ليبيريا">ليبيريا</option><option value="الجماهيرية الليبية">الجماهيرية الليبية</option><option value="ليتوانيا">ليتوانيا</option><option value="لوكسمبورج">لوكسمبورج</option><option value="ماكاو">ماكاو</option><option value="مقدونيا">مقدونيا</option><option value="مدغشقر">مدغشقر</option><option value="مالاوي">مالاوي</option><option value="ماليزيا">ماليزيا</option><option value="المالديف">المالديف</option><option value="مالي">مالي</option><option value="مالطا">مالطا</option><option value="جزر مارشيل">جزر مارشيل</option><option value="مارتنيك">مارتنيك</option><option value="موريتانيا">موريتانيا</option><option value="موريشيوس">موريشيوس</option><option value="المكسيك">المكسيك</option><option value="ميكرونيزيا">ميكرونيزيا</option><option value="مولدوف">مولدوف</option><option value="موناكو">موناكو</option><option value="مونجوليا">مونجوليا</option><option value="المغرب">المغرب</option><option value="موزمبيق">موزمبيق</option><option value="ناميبيا">ناميبيا</option><option value="نورو">نورو</option><option value="نيبال">نيبال</option><option value="هولندا">هولندا</option><option value="نيوكاليدونيا">نيوكاليدونيا</option><option value="نيوزلندا">نيوزلندا</option><option value="نيكاراجوا">نيكاراجوا</option><option value="النيجر">النيجر</option><option value="نيجيريا">نيجيريا</option><option value="نيو">نيو</option><option value="النرويج">النرويج</option><option value="عمان">عمان</option><option value="باكستان">باكستان</option><option value="فلسطين">فلسطين</option><option value="بنما">بنما</option><option value="غينيا الجديدة">غينيا الجديدة</option><option value="باراجواي">باراجواي</option><option value="بيرو">بيرو</option><option value="الفليبين">الفليبين</option><option value="بولندا">بولندا</option><option value="البرتغال">البرتغال</option><option value="بورتوريكو">بورتوريكو</option><option value="قطر">قطر</option><option value="جزر الإتحاد">جزر الإتحاد</option><option value="رومانيا">رومانيا</option><option value="روسيا الاتحادية">روسيا الاتحادية</option><option value="رواندا">رواندا</option><option value="سان كيتزونفيس">سان كيتزونفيس</option><option value="سان لوتشيا">سان لوتشيا</option><option value="سان فنسان و جرينادينز">سان فنسان و جرينادينز</option><option value="سامو">سامو</option><option value="سانت مارينو">سانت مارينو</option><option value="ساوتوم و برينسيب">ساوتوم و برينسيب</option><option value="المملكة العربية السعودية">المملكة العربية السعودية</option><option value="السنغال">السنغال</option><option value="تشيلي">تشيلي</option><option value="سيراليون">سيراليون</option><option value="سنغافورة">سنغافورة</option><option value="سلوفاكيا">سلوفاكيا</option><option value="سلوفانيا">سلوفانيا</option><option value="الصومال">الصومال</option><option value="شمال أفريقيا">شمال أفريقيا</option><option value="اسبانيا">اسبانيا</option><option value="سري لانكا">سري لانكا</option><option value="السودان">السودان</option><option value="سورينام">سورينام</option><option value="سوزيلاند">سوزيلاند</option><option value="السويد">السويد</option><option value="سويسرا">سويسرا</option><option value="سوريا">سوريا</option><option value="تايوان">تايوان</option><option value="طاجيكستان">طاجيكستان</option><option value="تنزانيا">تنزانيا</option><option value="تايلاند">تايلاند</option><option value="توجو">توجو</option><option value="تونجو">تونجو</option><option value="ترينداد وتوباجو">ترينداد وتوباجو</option><option value="تونس">تونس</option><option value="تركيا">تركيا</option><option value="تركستان">تركستان</option><option value="توفالو">توفالو</option><option value="اوغندا">اوغندا</option><option value="اوكرانيا">اوكرانيا</option><option value="الامارات">الامارات</option><option value="المملكة المتحدة">المملكة المتحدة</option><option value="الولايات المتحدة الامريكية">الولايات المتحدة الامريكية</option><option value="اوروجواي">اوروجواي</option><option value="اوزبيكستان">اوزبيكستان</option><option value="فانواتو">فانواتو</option><option value="فاتيكان">فاتيكان</option><option value="فنزويلا">فنزويلا</option><option value="فيتنام">فيتنام</option><option value="الصحراء الشرقية">الصحراء الشرقية</option><option value="اليمن">اليمن</option><option value="زائير">زائير</option><option value="زامبيا">زامبيا</option><option value="زيمبابوي">زيمبابوي</option></select>
+                </div>
+                <input type="text" id="mobile" maxlength="20" class="ltr" placeholder="الموبيل" tabindex="4">
+
+                <input type="text" id="ques" maxlength="150" dir="ltr" placeholder="مختصر السؤال" tabindex="6">             
+                <textarea id="msg" placeholder="تفاصيل السؤال" tabindex="6"></textarea>
+                            
+            </div>
+        </div>
+        <div id="mailFrontTop"><img src="/images/mail/frontTop.png" alt="Front top" class="sizeIt">
+            <div id="send">
+                    <a href="#" onclick="validate(); return false;" tabindex="7">إرســـال</a>
+                    <div id="sending">جاري الإرسال ...</div>
+            </div>
+        </div>
+        <div id="mailFrontBtm"><img src="/images/mail/frontBtmAr.png" alt="Front bottom" class="sizeIt"></div>
+    </div>
+
+        </div>
+        </div>
+    <div class="leftContent">
+        
+        <div>
+            <h4>روابط إلى</h4>
+            <a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a>
+            <a href="https://www.office.com/" target="_blank">البريد الإلكتروني</a>
+        </div>
+        <div>
+            <h4>الميديا</h4>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-1.html?display=الأخبار">الأخبار</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-2.html?display=الأحداث">الأحداث</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-3.html?display=الإعلانات">الإعلانات</a>
+            <a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a>
+            <a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديوهات</a>
+        </div>
+
+        <div>
+            <h4>التوظيف</h4>
+            <a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a>
+            <a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a>
+            <a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div id="socialDiv">
+                    <a href="https://www.youtube.com/channel/UCH2eN_qoqLx0aGD3GrrErhA" target="_blank"><i class="youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/el-minya-high-institute-for-engineering-and-technology/about/?viewAsMember=true" target="_blank"><i class="linkedin"></i></a>
+                    <a href="https://www.facebook.com/mhiet.edu.eg" target="_blank"><i class="facebook"></i></a>
+                    <a href="https://twitter.com/mhietedueg" target="_blank"><i class="twitter"></i></a>
+                </div>
+                <div id="footerLinkCont">
+                    <div id="locDiv">
+                        <a href="https://bit.ly/mhiet-location" target="_blank">
+                            <span>المنطقة الصناعية - المنيا الجديدة - المنيا<i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <img src="images/location.jpg" alt="الموقع" width="1000" height="701">
+                                <i class="route"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerLinksDiv" id="contactUsColumn">
+                        <h5>اتصل بنا</h5>
+                        <ul class="footerLinksUL" id="footerLinksULContact">
+                            <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي<svg><use xlink:href="/images/icons.svg#contactForm"></use></svg></a></li>
+                            <li><a href="tel:0020086-2290608"><span style="font-size:15px;font-family:Tahoma">086-2290608</span><svg><use xlink:href="/images/icons.svg#footerTelephone"></use></svg></a></li>
+                            <li><a href="mailto:admin@mhiet.edu.eg"><span style="font-size:14px">admin@mhiet.edu.eg</span><svg><use xlink:href="/images/icons.svg#footerEmail"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinksDiv" id="footerLinksColumn">
+                        <h5>روابط هامة</h5>
+                        <ul class="footerLinksUL">
+                            <li><a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a></li>
+                            <li><a href="https://www.office.com/" target="_blank">الدخول للبريد الإلكتروني</a></li>
+                            <li><a href="http://eea.org.eg/" target="_blank">نقابة المهندسين</a></li>
+                            <li><a href="http://portal.mohesr.gov.eg/" target="_blank">وزارة التعليم العالي</a></li>
+                            <li><a href="https://www.egypt.gov.eg/" target="_blank">بوابة الحكومة الالكترونية</a></li>
+                            <li><a href="https://tansik.egypt.gov.eg/application/" target="_blank">خدمات التنسيق</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div id="CR">
+                    جميع الحقوق محفوظة للمعهد العالي للهندسة والتكنولوجيا - المنيا © 2024<br>
+                    <a href="https://newvitalsoft.com" target="_blank">برمجة وتصميم نيو ڨايتل سوفت</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="hamMenu">
+        <div class="hamTop">
+            <div class="nefDiamond"></div>
+            <div class="hamEnglish">
+                <a href="contact-us.html" id="hamEngLink">
+                    <svg><use xlink:href="/images/icons.svg#english"></use></svg>
+                    <span>English Interface</span>
+                </a>
+            </div>
+            <img src="images/nefertari.png" class="hamLogo" alt="نفرتاري" width="68" height="89">
+            <span class="hamLogoText">المعهد العالي للهندسة والتكنولوجيا</span>
+        </div>
+        <div class="hamBody">
+            <ul class="hamNav"></ul>
+        </div>
+    </div>
+    <div class="hamCirc"></div>
+    <script src="ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/util.js"></script>
+    <script type="text/javascript" src="js/sharethis.js#property=5e9e1f966f740100124ea997&product=sticky-share-buttons&cms=sop" async="async"></script>
+    
+<script type="text/javascript">
+    !function(c){var i=[],n=/^url\(["']?([^"'\)]*)["']?\);?$/i,p=/\.png$/i,l=c.browser.msie&&6==c.browser.version;c(window).resize(function(){c.each(i,function(){this.refresh(!0)})}),c.Poshytip=function(t,i){this.$elm=c(t),this.opts=c.extend({},c.fn.poshytip.defaults,i),this.$tip=c(['<div class="',this.opts.className,'">','<div class="tip-inner tip-bg-image"></div>','<div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>',"</div>"].join("")).appendTo(document.body),this.$arrow=this.$tip.find("div.tip-arrow"),this.$inner=this.$tip.find("div.tip-inner"),this.disabled=!1,this.content=null,this.init()},c.Poshytip.prototype={init:function(){i.push(this);var t=this.$elm.attr("title");if(this.$elm.data("title.poshytip",void 0!==t?t:null).data("poshytip",this),"none"!=this.opts.showOn)switch(this.$elm.bind({"mouseenter.poshytip":c.proxy(this.mouseenter,this),"mouseleave.poshytip":c.proxy(this.mouseleave,this)}),this.opts.showOn){case"hover":"cursor"==this.opts.alignTo&&this.$elm.bind("mousemove.poshytip",c.proxy(this.mousemove,this)),this.opts.allowTipHover&&this.$tip.hover(c.proxy(this.clearTimeouts,this),c.proxy(this.mouseleave,this));break;case"focus":this.$elm.bind({"focus.poshytip":c.proxy(this.show,this),"blur.poshytip":c.proxy(this.hide,this)})}},mouseenter:function(t){return!!this.disabled||(this.$elm.attr("title",""),"focus"==this.opts.showOn||(this.clearTimeouts(),void(this.showTimeout=setTimeout(c.proxy(this.show,this),this.opts.showTimeout))))},mouseleave:function(t){if(this.disabled||this.asyncAnimating&&(this.$tip[0]===t.relatedTarget||jQuery.contains(this.$tip[0],t.relatedTarget)))return!0;t=this.$elm.data("title.poshytip");if(null!==t&&this.$elm.attr("title",t),"focus"==this.opts.showOn)return!0;this.clearTimeouts(),this.hideTimeout=setTimeout(c.proxy(this.hide,this),this.opts.hideTimeout)},mousemove:function(t){if(this.disabled)return!0;this.eventX=t.pageX,this.eventY=t.pageY,this.opts.followCursor&&this.$tip.data("active")&&(this.calcPos(),this.$tip.css({left:this.pos.l,top:this.pos.t}),this.pos.arrow&&(this.$arrow[0].className="tip-arrow tip-arrow-"+this.pos.arrow))},show:function(){this.disabled||this.$tip.data("active")||(this.reset(),this.update(),this.display(),this.opts.timeOnScreen&&setTimeout(c.proxy(this.hide,this),this.opts.timeOnScreen))},hide:function(){!this.disabled&&this.$tip.data("active")&&this.display(!0)},reset:function(){this.$tip.queue([]).detach().css("visibility","hidden").data("active",!1),this.$inner.find("*").poshytip("hide"),this.opts.fade&&this.$tip.css("opacity",this.opacity),this.$arrow[0].className="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left",this.asyncAnimating=!1},update:function(t,i){if(!this.disabled){var s=void 0!==t;if(s){if(i||(this.opts.content=t),!this.$tip.data("active"))return}else t=this.opts.content;var e=this,t="function"==typeof t?t.call(this.$elm[0],function(t){e.update(t)}):"[title]"==t?this.$elm.data("title.poshytip"):t;this.content!==t&&(this.$inner.empty().append(t),this.content=t),this.refresh(s)}},refresh:function(t){if(!this.disabled){if(t){if(!this.$tip.data("active"))return;var i={left:this.$tip.css("left"),top:this.$tip.css("top")}}this.$tip.css({left:0,top:0}).appendTo(document.body),void 0===this.opacity&&(this.opacity=this.$tip.css("opacity"));var s=this.$tip.css("background-image").match(n),e=this.$arrow.css("background-image").match(n);s&&(a=p.test(s[1]),l&&a?(this.$tip.css("background-image","none"),this.$inner.css({margin:0,border:0,padding:0}),s=a=!1):this.$tip.prepend('<table border="0" cellpadding="0" cellspacing="0"><tr><td class="tip-top tip-bg-image" colspan="2"><span></span></td><td class="tip-right tip-bg-image" rowspan="2"><span></span></td></tr><tr><td class="tip-left tip-bg-image" rowspan="2"><span></span></td><td></td></tr><tr><td class="tip-bottom tip-bg-image" colspan="2"><span></span></td></tr></table>').css({border:0,padding:0,"background-image":"none","background-color":"transparent"}).find(".tip-bg-image").css("background-image",'url("'+s[1]+'")').end().find("td").eq(3).append(this.$inner),a&&!c.support.opacity&&(this.opts.fade=!1)),e&&!c.support.opacity&&(l&&p.test(e[1])&&(e=!1,this.$arrow.css("background-image","none")),this.opts.fade=!1);var h,a,o,r=this.$tip.find("table");l?(this.$tip[0].style.width="",r.width("auto").find("td").eq(3).width("auto"),h=this.$tip.width(),s=parseInt(this.$tip.css("min-width")),a=parseInt(this.$tip.css("max-width")),!isNaN(s)&&h<s?h=s:!isNaN(a)&&a<h&&(h=a),this.$tip.add(r).width(h).eq(0).find("td").eq(3).width("100%")):r[0]&&r.width("auto").find("td").eq(3).width("auto").end().end().width(document.defaultView&&document.defaultView.getComputedStyle&&parseFloat(document.defaultView.getComputedStyle(this.$tip[0],null).width)||this.$tip.width()).find("td").eq(3).width("100%"),this.tipOuterW=this.$tip.outerWidth(),this.tipOuterH=this.$tip.outerHeight(),this.calcPos(),e&&this.pos.arrow&&(this.$arrow[0].className="tip-arrow tip-arrow-"+this.pos.arrow,this.$arrow.css("visibility","inherit")),t?(this.asyncAnimating=!0,(o=this).$tip.css(i).animate({left:this.pos.l,top:this.pos.t},200,function(){o.asyncAnimating=!1})):this.$tip.css({left:this.pos.l,top:this.pos.t})}},display:function(t){var i,s,e,h,a,o=this.$tip.data("active");o&&!t||!o&&t||(this.$tip.stop(),(this.opts.slide&&this.pos.arrow||this.opts.fade)&&(t&&this.opts.hideAniDuration||!t&&this.opts.showAniDuration)&&(i={},s={},this.opts.slide&&this.pos.arrow&&(h="bottom"==this.pos.arrow||"top"==this.pos.arrow?(e="top","bottom"):(e="left","right"),a=parseInt(this.$tip.css(e)),i[e]=a+(t?0:this.pos.arrow==h?-this.opts.slideOffset:this.opts.slideOffset),s[e]=a+(t?this.pos.arrow==h?this.opts.slideOffset:-this.opts.slideOffset:0)+"px"),this.opts.fade&&(i.opacity=t?this.$tip.css("opacity"):0,s.opacity=t?0:this.opacity),this.$tip.css(i).animate(s,this.opts[t?"hideAniDuration":"showAniDuration"])),t?this.$tip.queue(c.proxy(this.reset,this)):this.$tip.css("visibility","inherit"),this.$tip.data("active",!o))},disable:function(){this.reset(),this.disabled=!0},enable:function(){this.disabled=!1},destroy:function(){this.reset(),this.$tip.remove(),delete this.$tip,this.content=null,this.$elm.unbind(".poshytip").removeData("title.poshytip").removeData("poshytip"),i.splice(c.inArray(this,i),1)},clearTimeouts:function(){this.showTimeout&&(clearTimeout(this.showTimeout),this.showTimeout=0),this.hideTimeout&&(clearTimeout(this.hideTimeout),this.hideTimeout=0)},calcPos:function(){var t,i,s,e,h,a,o,r,n,p={l:0,t:0,arrow:""},l=c(window),d={l:l.scrollLeft(),t:l.scrollTop(),w:l.width(),h:l.height()};switch("cursor"==this.opts.alignTo?(e=h=a=this.eventX,o=r=n=this.eventY):(t=(s=this.$elm.offset()).left,i=s.top,l=this.$elm.outerWidth(),s=this.$elm.outerHeight(),h=(e=t+("inner-right"!=this.opts.alignX?0:l))+Math.floor(l/2),a=e+("inner-left"!=this.opts.alignX?l:0),r=(o=i+("inner-bottom"!=this.opts.alignY?0:s))+Math.floor(s/2),n=o+("inner-top"!=this.opts.alignY?s:0)),this.opts.alignX){case"right":case"inner-left":p.l=a+this.opts.offsetX,p.l+this.tipOuterW>d.l+d.w&&(p.l=d.l+d.w-this.tipOuterW),"right"!=this.opts.alignX&&"center"!=this.opts.alignY||(p.arrow="left");break;case"center":p.l=h-Math.floor(this.tipOuterW/2),p.l+this.tipOuterW>d.l+d.w?p.l=d.l+d.w-this.tipOuterW:p.l<d.l&&(p.l=d.l);break;default:p.l=e-this.tipOuterW-this.opts.offsetX,p.l<d.l&&(p.l=d.l),"left"!=this.opts.alignX&&"center"!=this.opts.alignY||(p.arrow="right")}switch(this.opts.alignY){case"bottom":case"inner-top":p.t=n+this.opts.offsetY,p.arrow&&"cursor"!=this.opts.alignTo||(p.arrow="top"),p.t+this.tipOuterH>d.t+d.h&&(p.t=o-this.tipOuterH-this.opts.offsetY,"top"==p.arrow&&(p.arrow="bottom"));break;case"center":p.t=r-Math.floor(this.tipOuterH/2),p.t+this.tipOuterH>d.t+d.h?p.t=d.t+d.h-this.tipOuterH:p.t<d.t&&(p.t=d.t);break;default:p.t=o-this.tipOuterH-this.opts.offsetY,p.arrow&&"cursor"!=this.opts.alignTo||(p.arrow="bottom"),p.t<d.t&&(p.t=n+this.opts.offsetY,"bottom"==p.arrow&&(p.arrow="top"))}this.pos=p}},c.fn.poshytip=function(t){if("string"==typeof t){var i=arguments,s=t;return Array.prototype.shift.call(i),"destroy"==s&&this.die("mouseenter.poshytip").die("focus.poshytip"),this.each(function(){var t=c(this).data("poshytip");t&&t[s]&&t[s].apply(t,i)})}var e=c.extend({},c.fn.poshytip.defaults,t);if(c("#poshytip-css-"+e.className)[0]||c(['<style id="poshytip-css-',e.className,'" type="text/css">',"div.",e.className,"{visibility:hidden;position:absolute;top:0;left:0;}","div.",e.className," table, div.",e.className," td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;}","div.",e.className," td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:",e.bgImageFrameSize,"px;width:",e.bgImageFrameSize,"px;overflow:hidden;}","div.",e.className," td.tip-right{background-position:100% 0;}","div.",e.className," td.tip-bottom{background-position:100% 100%;}","div.",e.className," td.tip-left{background-position:0 100%;}","div.",e.className," div.tip-inner{background-position:-",e.bgImageFrameSize,"px -",e.bgImageFrameSize,"px;}","div.",e.className," div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}","</style>"].join("")).appendTo("head"),e.liveEvents&&"none"!=e.showOn){var h=c.extend({},e,{liveEvents:!1});switch(e.showOn){case"hover":this.live("mouseenter.poshytip",function(){var t=c(this);t.data("poshytip")||t.poshytip(h).poshytip("mouseenter")});break;case"focus":this.live("focus.poshytip",function(){var t=c(this);t.data("poshytip")||t.poshytip(h).poshytip("show")})}return this}return this.each(function(){new c.Poshytip(this,e)})},c.fn.poshytip.defaults={content:"[title]",className:"tip-yellow",bgImageFrameSize:10,showTimeout:500,hideTimeout:100,timeOnScreen:0,showOn:"hover",liveEvents:!1,alignTo:"cursor",alignX:"right",alignY:"top",offsetX:-22,offsetY:18,allowTipHover:!0,followCursor:!1,fade:!0,slide:!0,slideOffset:8,showAniDuration:300,hideAniDuration:300}}(jQuery),function(l){for(var d,m=document.getElementsByTagName("head")[0].style,h=["transformProperty","WebkitTransform","OTransform","msTransform","MozTransform"],g=0;g<h.length;g++)void 0!==m[h[g]]&&(d=h[g]);var k=eval('"v"=="\v"'),Ra;jQuery.fn.extend({rotate:function(t){if(0!==this.length&&void 0!==t){"number"==typeof t&&(t={angle:t});for(var i=[],s=0,e=this.length;s<e;s++){var h,a=this.get(s);a.Wilq32&&a.Wilq32.PhotoEffect?a.Wilq32.PhotoEffect._handleRotation(t):(h=l.extend(!0,{},t),a=new Wilq32.PhotoEffect(a,h)._rootObj,i.push(l(a)))}return i}},getRotateAngle:function(){for(var t=[],i=0,s=this.length;i<s;i++){var e=this.get(i);e.Wilq32&&e.Wilq32.PhotoEffect&&(t[i]=e.Wilq32.PhotoEffect._angle)}return t},stopRotate:function(){for(var t=0,i=this.length;t<i;t++){var s=this.get(t);s.Wilq32&&s.Wilq32.PhotoEffect&&clearTimeout(s.Wilq32.PhotoEffect._timer)}}}),Wilq32=window.Wilq32||{},Wilq32.PhotoEffect=d?function(t,i){t.Wilq32={PhotoEffect:this},this._img=this._rootObj=this._eventObj=t,this._handleRotation(i)}:function(t,i){var s;this._img=t,this._rootObj=document.createElement("span"),this._rootObj.style.display="inline-block",this._rootObj.Wilq32={PhotoEffect:this},t.parentNode.insertBefore(this._rootObj,t),t.complete?this._Loader(i):(s=this,jQuery(this._img).bind("load",function(){s._Loader(i)}))},Wilq32.PhotoEffect.prototype={_setupParameters:function(t){this._parameters=this._parameters||{},"number"!=typeof this._angle&&(this._angle=0),"number"==typeof t.angle&&(this._angle=t.angle),this._parameters.animateTo="number"==typeof t.animateTo?t.animateTo:this._angle,this._parameters.step=t.step||this._parameters.step||null,this._parameters.easing=t.easing||this._parameters.easing||function(t,i,s,e,h){return-e*((i=i/h-1)*i*i*i-1)+s},this._parameters.duration=t.duration||this._parameters.duration||1e3,this._parameters.callback=t.callback||this._parameters.callback||function(){},t.bind&&t.bind!=this._parameters.bind&&this._BindEvents(t.bind)},_handleRotation:function(t){this._setupParameters(t),this._angle==this._parameters.animateTo?this._rotate(this._angle):this._animateStart()},_BindEvents:function(t){if(t&&this._eventObj){if(this._parameters.bind){var i,s=this._parameters.bind;for(i in s)s.hasOwnProperty(i)&&jQuery(this._eventObj).unbind(i,s[i])}for(i in this._parameters.bind=t)t.hasOwnProperty(i)&&jQuery(this._eventObj).bind(i,t[i])}},_Loader:k?function(t){var i=this._img.width,s=this._img.height;this._img.parentNode.removeChild(this._img),this._vimage=this.createVMLNode("image"),this._vimage.src=this._img.src,this._vimage.style.height=s+"px",this._vimage.style.width=i+"px",this._vimage.style.position="absolute",this._vimage.style.top="0px",this._vimage.style.left="0px",this._container=this.createVMLNode("group"),this._container.style.width=i,this._container.style.height=s,this._container.style.position="absolute",this._container.setAttribute("coordsize",i-1+","+(s-1)),this._container.appendChild(this._vimage),this._rootObj.appendChild(this._container),this._rootObj.style.position="relative",this._rootObj.style.width=i+"px",this._rootObj.style.height=s+"px",this._rootObj.setAttribute("id",this._img.getAttribute("id")),this._rootObj.className=this._img.className,this._eventObj=this._rootObj,this._handleRotation(t)}:function(t){this._rootObj.setAttribute("id",this._img.getAttribute("id")),this._rootObj.className=this._img.className,this._width=this._img.width,this._height=this._img.height,this._widthHalf=this._width/2,this._heightHalf=this._height/2;var i=Math.sqrt(this._height*this._height+this._width*this._width);this._widthAdd=i-this._width,this._heightAdd=i-this._height,this._widthAddHalf=this._widthAdd/2,this._heightAddHalf=this._heightAdd/2,this._img.parentNode.removeChild(this._img),this._aspectW=(parseInt(this._img.style.width,10)||this._width)/this._img.width,this._aspectH=(parseInt(this._img.style.height,10)||this._height)/this._img.height,this._canvas=document.createElement("canvas"),this._canvas.setAttribute("width",this._width),this._canvas.style.position="relative",this._canvas.style.left=-this._widthAddHalf+"px",this._canvas.style.top=-this._heightAddHalf+"px",this._canvas.Wilq32=this._rootObj.Wilq32,this._rootObj.appendChild(this._canvas),this._rootObj.style.width=this._width+"px",this._rootObj.style.height=this._height+"px",this._eventObj=this._canvas,this._cnv=this._canvas.getContext("2d"),this._handleRotation(t)},_animateStart:function(){this._timer&&clearTimeout(this._timer),this._animateStartTime=+new Date,this._animateStartAngle=this._angle,this._animate()},_animate:function(){var t,i=+new Date,s=i-this._animateStartTime>this._parameters.duration;s&&!this._parameters.animatedGif?clearTimeout(this._timer):((this._canvas||this._vimage||this._img)&&(i=this._parameters.easing(0,i-this._animateStartTime,this._animateStartAngle,this._parameters.animateTo-this._animateStartAngle,this._parameters.duration),this._rotate(~~(10*i)/10)),this._parameters.step&&this._parameters.step(this._angle),(t=this)._timer=setTimeout(function(){t._animate.call(t)},10)),this._parameters.callback&&s&&(this._angle=this._parameters.animateTo,this._rotate(this._angle),this._parameters.callback.call(this._rootObj))},_rotate:(Ra=Math.PI/180,k?function(t){this._angle=t,this._container.style.rotation=t%360+"deg"}:d?function(t){this._angle=t,this._img.style[d]="rotate("+t%360+"deg)"}:function(t){t=(this._angle=t)%360*Ra,this._canvas.width=this._width+this._widthAdd,this._canvas.height=this._height+this._heightAdd,this._cnv.translate(this._widthAddHalf,this._heightAddHalf),this._cnv.translate(this._widthHalf,this._heightHalf),this._cnv.rotate(t),this._cnv.translate(-this._widthHalf,-this._heightHalf),this._cnv.scale(this._aspectW,this._aspectH),this._cnv.drawImage(this._img,0,0)})},k&&(Wilq32.PhotoEffect.prototype.createVMLNode=function(){document.createStyleSheet().addRule(".rvml","behavior:url(#default#VML)");try{return document.namespaces.rvml||document.namespaces.add("rvml","urn:schemas-microsoft-com:vml"),function(t){return document.createElement("<rvml:"+t+' class="rvml">')}}catch(t){return function(t){return document.createElement("<"+t+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())}(jQuery);
+    var sendIsDone = false;
+    function publishFunc() {
+        if ($('#on').css('margin-top') == '0px') {
+            $('#on').animate({ 'margin-top': '-' + $('#on').height() + 'px' }, 300);
+            $('#cType').removeAttr('checked');
+        }
+        else {
+            $('#on').animate({ 'margin-top': 0 }, 300);
+            $('#cType').attr('checked', 'checked');
+        }
+    }
+
+    $('#cType').click(function () {
+        if ($(this).is(':checked')) 
+            $('#on').animate({ 'margin-top': 0 }, 300);
+        else
+            $('#on').animate({ 'margin-top': '-' + $('#on').height() + 'px' }, 300);
+    })
+
+    $('#publish').click(publishFunc);
+
+    function checkEmpty(str) {
+        if (!$.trim(str).length)
+            return true;
+        else
+            return false;
+    }
+
+    function sizeIt() {
+        var fH = $('#mailFrontTop').height();
+        $('#letter').css('height', 'auto').height($('#letter').height() + fH + $('#mailFrontBtm').height() );
+        $('#send').css('top', (fH / 2 - $('#send').outerHeight() / 2) + 'px');
+        if (sendIsDone) {
+            $('#mailTop').css({ height: 'auto', top: $('#mailTop').height() + 'px' });
+            $('#alert').height($('#mailTop').height());
+        }
+    }
+    sizeIt();
+
+    $(window).resize(sizeIt).load(sizeIt);
+
+    (function (window, document, $) { var isOperaMini = Object.prototype.toString.call(window.operamini) == '[object OperaMini]'; var isInputSupported = 'placeholder' in document.createElement('input') && !isOperaMini; var isTextareaSupported = 'placeholder' in document.createElement('textarea') && !isOperaMini; var prototype = $.fn; var valHooks = $.valHooks; var propHooks = $.propHooks; var hooks; var placeholder; if (isInputSupported && isTextareaSupported) { placeholder = prototype.placeholder = function () { return this }; placeholder.input = placeholder.textarea = true } else { placeholder = prototype.placeholder = function () { var $this = this; $this.filter((isInputSupported ? 'textarea' : ':input') + '[placeholder]').not('.placeholder').bind({ 'focus.placeholder': clearPlaceholder, 'blur.placeholder': setPlaceholder }).data('placeholder-enabled', true).trigger('blur.placeholder'); return $this }; placeholder.input = isInputSupported; placeholder.textarea = isTextareaSupported; hooks = { 'get': function (element) { var $element = $(element); var $passwordInput = $element.data('placeholder-password'); if ($passwordInput) { return $passwordInput[0].value } return $element.data('placeholder-enabled') && $element.hasClass('placeholder') ? '' : element.value }, 'set': function (element, value) { var $element = $(element); var $passwordInput = $element.data('placeholder-password'); if ($passwordInput) { return $passwordInput[0].value = value } if (!$element.data('placeholder-enabled')) { return element.value = value } if (value == '') { element.value = value; if (element != safeActiveElement()) { setPlaceholder.call(element) } } else if ($element.hasClass('placeholder')) { clearPlaceholder.call(element, true, value) || (element.value = value) } else { element.value = value } return $element } }; if (!isInputSupported) { valHooks.input = hooks; propHooks.value = hooks } if (!isTextareaSupported) { valHooks.textarea = hooks; propHooks.value = hooks } $(function () { $(document).delegate('form', 'submit.placeholder', function () { var $inputs = $('.placeholder', this).each(clearPlaceholder); setTimeout(function () { $inputs.each(setPlaceholder) }, 10) }) }); $(window).bind('beforeunload.placeholder', function () { $('.placeholder').each(function () { this.value = '' }) }) } function args(elem) { var newAttrs = {}; var rinlinejQuery = /^jQuery\d+$/; $.each(elem.attributes, function (i, attr) { if (attr.specified && !rinlinejQuery.test(attr.name)) { newAttrs[attr.name] = attr.value } }); return newAttrs } function clearPlaceholder(event, value) { var input = this; var $input = $(input); if (input.value == $input.attr('placeholder') && $input.hasClass('placeholder')) { if ($input.data('placeholder-password')) { $input = $input.hide().next().show().attr('id', $input.removeAttr('id').data('placeholder-id')); if (event === true) { return $input[0].value = value } $input.focus() } else { input.value = ''; $input.removeClass('placeholder'); input == safeActiveElement() && input.select() } } } function setPlaceholder() { var $replacement; var input = this; var $input = $(input); var id = this.id; if (input.value == '') { if (input.type == 'password') { if (!$input.data('placeholder-textinput')) { try { $replacement = $input.clone().attr({ 'type': 'text' }) } catch (e) { $replacement = $('<input>').attr($.extend(args(this), { 'type': 'text' })) } $replacement.removeAttr('name').data({ 'placeholder-password': $input, 'placeholder-id': id }).bind('focus.placeholder', clearPlaceholder); $input.data({ 'placeholder-textinput': $replacement, 'placeholder-id': id }).before($replacement) } $input = $input.removeAttr('id').hide().prev().attr('id', id).show() } $input.addClass('placeholder'); $input[0].value = $input.attr('placeholder') } else { $input.removeClass('placeholder') } } function safeActiveElement() { try { return document.activeElement } catch (exception) { } } }(this, document, jQuery));
+    var img = new Image();
+    img.src = "/images/mail/err.png"
+
+
+    function verifyCallback(data) {
+        if (data != '') {
+            $('input, textarea, #publish').css('opacity', '1');
+            $('#captchaCont').animate({ 'top': '-200px', 'opacity': '0' }, function () { $('#sending').css('display', 'block').show('fast'); });
+            $.post("/Arabic/sendEmail.ashx", { name: $('#name').val(), email: $('#eml').val(), cType: $('#cType').is(':checked'), country: $('#country').val(), mobile: $('#mobile').val(), ques: $('#ques').val(), msg: $('#msg').val(), captcha: $('#g-recaptcha-response').val() }, null, 'script').fail(function(xhr, status, erro) {
+                //alert('حدث خطأ غير متوقع');
+                alert(xhr.responseText);
+            });
+        }
+    }
+
+
+
+    var onloadCallback = function () {
+        setTimeout(grecaptcha.render('reCaptcha', {
+            //'sitekey': '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+            'sitekey': '6LdOyH0aAAAAACaNHrySp5sDk2VSp2ys0j2t8jej',
+            'type': 'image',
+            'callback' : verifyCallback
+        }), 0);
+    };
+
+    $(function () {
+        $('#mailDiv').on({ 'mouseenter': function () { $(this).stop().animate({ marginTop: '150px' }, 600, $.easing.easeOutQuad); $('#letter').stop().animate({ bottom: '30px' }, { duration: 600, easing: 'easeOutQuad', complete: function () { $('#send').fadeIn('slow'); } }) }, 'mouseleave': function () { $('#send').hide(); $(this).stop().animate({ marginTop: '0' }, 600, $.easing.easeInQuad); $('#letter').stop().animate({ bottom: '-290px' }, 600, $.easing.easeInQuad) } })
+        function dOff(){ $('#mailDiv').off()}
+        $('input:text, textarea, select').focus(dOff);
+        $('#publish').click(dOff);
+
+        $('#sending').poshytip({
+            showOn: 'none',
+            className: 'tip-yellowsimple',
+            alignTo: 'target',
+            alignX: 'center',
+            alignY: 'center',
+            offsetX: 5
+        });
+
+
+        $('#name, #eml, #ques, #msg, #mobile').poshytip({
+            showOn: 'none',
+            className: 'tip-yellowsimple',
+            alignTo: 'target',
+            alignX: 'right',
+            alignY: 'center',
+            offsetX: 5
+        }).blur(function () {
+            var str = $(this).val();
+            if (checkEmpty(str))
+                $(this).poshytip('update', '<span class="validator">مطلوب.</span>').poshytip('show');
+            else {
+                $(this).poshytip('hide');
+
+                var id = $(this).attr('id');
+                if (id == 'eml') {
+                    var reEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (!reEmail.test(str))
+                        $(this).poshytip('update', '<span class="validator">البريد الإلكترونى غير صحيح.</span>').poshytip('show');
+                    else
+                        $(this).poshytip('hide');
+
+                }
+                else if (id == 'msg') {
+                    if (str.length > 4000)
+                        $(this).poshytip('update', '<span class="validator">الرسالة طويلة جداً</span>').poshytip('show');
+                    else
+                        $(this).poshytip('hide');
+                }
+            }
+        });
+
+        $('input:text').keypress(function (event) {
+            if (event.keyCode == 13) validate();
+        });
+
+    });
+
+
+    function validate() {
+        $('#mailDiv').off();
+        var gisValid = true;
+        $('#name, #eml, #ques, #subject, #msg, #mobile').each(function () {
+            var isValid = true;
+            var str = $(this).val();
+            if (checkEmpty(str)) {
+                $(this).poshytip('update', '<span class="validator">مطلوب.</span>');
+                isValid = false;
+            }
+            else {
+                var id = $(this).attr('id');
+                if (id == 'eml') {
+                    var reEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (!reEmail.test(str)) {
+                        $(this).poshytip('update', '<span class="validator">البريد الإلكترونى غير صحيح.</span>');
+                        isValid = false;
+                    }
+                    else
+                        $(this).poshytip('hide');
+
+                }
+                else if (id == 'msg') {
+                    if (str.length > 4000) {
+                        $(this).poshytip('update', '<span class="validator">الرسالة طويلة جداً.</span>');
+                        isValid = false;
+                    }
+                    else
+                        $(this).poshytip('hide');
+                }
+            }
+            if (isValid)
+                $(this).poshytip('hide');
+            else {
+                $(this).poshytip('show');
+                gisValid = false;
+            }
+        })
+        if (gisValid) {
+            grecaptcha.reset();
+            $('#send a').fadeOut('fast', function () {
+                $('#captchaCont').animate({ 'top': '18%', 'opacity': '1' });
+                $('input, textarea, #publish').css('opacity', '.4')
+                $('#publish').unbind().find('span').css('cursor', 'default');
+                $('input:text, textarea, select').attr('disabled', 'disabled');
+            });
+        }
+    }
+
+    function sent() {
+        sendIsDone = true;
+        $('#send').fadeOut(500);
+        $('#mailDiv').css('z-index', '101').stop().animate({ marginTop: '0' }, {
+            duration: 500, easing: 'easeInQuad', complete: function () {
+                $('#letter').stop().animate({ bottom: '-320px' }, {
+                    duration: 1000, easing: 'easeInQuad', complete: function () {
+                        $('#mailTop').css({ 'zIndex': '30' }).animate({ top: $('#mailTop').height() + 'px' }, {
+                            duration: 100, easing: 'swing', complete: function () {
+                                $('#flipper').rotate(180);
+                                $('#alert').fadeIn(2000);
+                                setTimeout(function () { $("#letter").hide(); }, 1500);
+                                $('#mailDiv').stop().animate({ marginTop: '-' + ($('#mailTop').height() - 20) + 'px' }, { duration: 800, easing: 'easeInQuad' })
+                            }
+                        });
+                    }
+                });
+
+            }
+        })
+    }
+
+
+    function resetForm() {
+        $('input:text, textarea').removeAttr('disabled');
+        $('#send a').show();
+        $('#sending').hide();
+        $('#sending').poshytip('hide');
+    }
+
+    function sendError(err) {
+        $('#sending').show().poshytip('update', '<span style="color:#de3f5d;font:normal 8pt verdana,arial">' + err + '</span><br /><input type="button" value="OK" onclick="resetForm()" />').poshytip('show');
+        $('#publish').bind('click', publishFunc).find('span').css('cursor', 'pointer');
+        $('input:text, textarea, select').removeAttr('disabled');
+    }
+</script>		
+<script src="recaptcha/api.js?onload=onloadCallback&render=explicit&hl=ar" async="" defer=""></script>
+
+ </body>
+</html>

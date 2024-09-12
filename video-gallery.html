@@ -1,0 +1,434 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00A8DA">
+    <meta property="og:site_name" content="El Minya Higher Institute of Engineering & Technology">
+    <meta property="og:image" content="https://mhiet.edu.eg/images/enSocialShare.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="enCSS/s.css">
+    
+    <title>Video Gallery</title>
+    <meta name="description" content="The video gallery in El Minya higher institute of engineering and technology">
+    <meta name="keywords" content="video gallery, videos">
+    <meta property="og:title" content="Video gallery">
+    <meta property="og:description" content="The video gallery in El Minya higher institute of engineering and technology">
+<style type="text/css">
+.noRes{margin-left:20px}
+.sharethis-inline-share-buttons{z-index:1 !important;top:18px !important;overflow:auto}
+.st-btn{float:right;margin-right:0 !important;margin-left:8px}
+.leftContent{width:100%}
+.rightContent{display:none}
+.videoList div:first-child, .videoList img {transition:all 0.2s linear}
+.videoList{margin:20px 0;padding:0;list-style:none;display:block;width:100%}
+.videoList li{position:relative;width:222px;height:200px;display:inline-block;margin:20px 27px}
+.videoList div:first-child{padding:4px;width:100%;height:100%;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:relative;box-shadow:0 0 16px rgba(0,0,0,.3)}
+.videoList div:first-child:hover{box-shadow:0 0 26px rgba(0,0,0,.4)}
+.videoList span:first-child{width:214px;height:160px;display:block;overflow:hidden}
+.videoList img{max-width:100%;height:auto}
+.videoList a{color:#7c8197 !important}
+.videoList a:hover{color:#615394 !important}
+.videoList span:last-child{width:214px;height:50px;display:block;text-align:left;float:left;margin-top:4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:10pt}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .videoList{text-align:center}
+}
+.play{position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -20px;
+    transition: .5s ease all;
+    font-size: 30pt;
+    color: #ffffff;
+    box-shadow: 0 0 16px rgba(0,0,0,.5);
+    border-radius: 50%;
+    background: rgba(0,0,0,.3);transition:.5s ease all}
+.play:before{content:"\f144"}
+.videoList div:hover .play{color:#2196f3} 
+h2{margin-right:10px}
+.videoList div:hover img{-webkit-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
+.split{display:block;margin:20px auto 40px;height:1px;background:rgba(0,0,0,.1)}
+
+
+#dimmer{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);z-index:100001;display:none}
+#videoMainCont{display:block;position:absolute;top:0;left:0;right:0;bottom:0;padding:20px 10px;z-index:-1;background:url(images/pixel.png)}
+#videoCont{background:#fff;max-width:750px;margin:0 auto;position:relative;padding:10px;box-shadow:0 0 20px #8f9196;border-radius:4px;border:0px solid #7c8197;top:-2000px}
+#videoWrapper {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;margin-bottom:10px;max-width:750px}
+h3{margin:0 20px 10px 0;font-size:14pt;font-weight:normal}
+#videoWrapper iframe {position:absolute;top:0;left:0;width:100%;height:100%}
+#desc{color:#7c8197;font-size:11pt}
+#close{transition:.5s ease all;z-index:100;top:5px;right:5px;position:absolute;cursor:pointer;color:#C3608A;font-size:24px;font-weight:400}
+#close:before {content: "\f057" }
+#close:hover{color:#3f51b5}
+#iLoader{width:222px;height:200px;position:absolute;top:0;left:0;z-index:101;display:none}
+#aniMask{background:rgba(0,0,0,0.7);opacity:.75;width:222px;height:200px}
+#aniBg{position:absolute;left:50%;top:50%;margin-left:-25px;margin-top:-39px;width:50px;height:50px;background-color:#f5f5f5;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;opacity:.6;box-shadow:0 0 20px #8f9196;border:1px solid #8f9196}
+#anim {
+  display: inline-block;
+  position:absolute;left:50%;top:50%;margin-left:-25px;margin-top:-39px
+}
+#anim:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 25px solid #0387cd;
+  border-color: #0387cd transparent #0387cd transparent;
+  animation: anim 1.2s infinite;
+}
+@keyframes anim {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+@media only screen and (min-width:0) and (max-width:480px) {.videoList li{margin:10px 0}}
+.sharethis-inline-share-buttons{margin-bottom:10px}
+</style>
+<script>var tag = document.createElement('script');tag.src = "https://www.youtube.com/iframe_api";var firstScriptTag = document.getElementsByTagName('script')[0];firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);</script>
+
+    <style>#banner{background-image: url(/images/header/en/194/1202103090233284377160.jpg)}</style>
+</head>
+<body>
+    <div class="dropMenu"><ul class="menu" id="topDropMenu"></ul></div>
+    <div class="container">
+        <header>
+            <div class="header section">
+                
+                <div id="topLeftLinks">
+                    <a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#arabic"></use></svg>
+                        <span>Arabic Interface</span>
+                    </a>
+                    <a href="mailto:admin@mhiet.edu.eg">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#email"></use></svg>
+                        <span>admin@mhiet.edu.eg</span>
+                    </a>
+                    <a href="tel:0020086-2290608">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#telephone"></use></svg>
+                        <span>086-2290608</span>
+                    </a>
+                </div>
+                <a href="english/index.htm" id="logo"><img src="images/english-logo.png" alt="Higher Institute of Engineering and Technology" width="295" height="76"></a>
+                <div class="hamDiamod"></div>
+                <svg class="ham" viewbox="0 0 100 100" width="60">
+                    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                    <path class="line middle" d="m 30,50 h 40"></path>
+                    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                </svg>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li class="parentMenu">
+                    <span class="dropList">About MHIET</span>
+                    <ul class="subMenu">
+                        <li><a href="english/page/1000/originating-of-the-institute.html">Originating of The Institute</a></li>
+                        <li><a href="english/page/1001/study-system-in-the-institute.html">Study System in The Institute</a></li>
+                        <li><a href="english/page/1010/offices-of-the-vice-deans.html">Offices of The Dean and The Vice</a></li>
+                        <li><a href="english/page/1018/vision-message-and-targets.html">Vision, Message and Targets</a></li>
+                        <li><a href="english/page/1022/scientific-journal.html">Scientific Journal</a></li>
+                        <li><a href="english/page/1015/community-service.html">Community Service</a></li>
+                        <li><a href="photo-album.html">Photo Album</a></li>
+                        <li><a href="video-gallery.html">Video Gallery</a></li>
+                        <li><a href="news-events-announcements.html">News, Events & Announcements</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Departments</span>
+                    <ul class="subMenu">
+                        <li><a href="departments/1004/basic-sciences-department.html">Basic Sciences Department</a></li>
+                        <li><a href="departments/1001/civil-engineering-department.html">Civil Engineering Department</a></li>
+                        <li><a href="departments/1000/architecture-engineering-department.html">Architecture Engineering Department</a></li>
+                        <li><a href="departments/1002/electrical-engineering-and-computers-departments.html">Electrical Engineering & Computers Departments</a></li>
+                        <li><a href="departments/1003/mechanical-engineering-department-mechatronics.html">Mechanical Engineering Department-Mechatronics</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Academics</span>
+                    <ul class="subMenu">
+                        <li><a href="https://staffportal.mhiet.edu.eg/english/" target="_blank">Academics Portal</a></li>
+                        <li><a href="https://www.researchgate.net/institution/El_Minya_High_Institute_For_Engineering_and_Technology" target="_blank">MHIET ResearchGate</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Join Us</span>
+                    <ul class="subMenu">
+                        <li><a href="english/page/1017/joining-the-institute.html">Joining The Institute</a></li>
+                        <li><a href="english/page/1020/tuition-fees.html">Tuition Fees</a></li>
+                        <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Students & alumni</span>
+                    <ul class="subMenu">
+                        <li><a href="students-alumni-login.html">Login</a></li>
+                        <li><a href="electronic-library.html">Electronic Library</a></li>
+                        <li><a href="english/page/1006/student-union.html">Students Union</a></li>
+                        <li><a href="english/page/1009/students-care.html">Student Care</a></li>
+                        <li><a href="english/page/1002/housing.html">Housing</a></li>
+                        <li><a href="english/page/1003/transportation.html">Transportation</a></li>
+                        <li><a href="english/page/1004/medical-insurance.html">Medical Care & Insurance</a></li>
+                        <li><a href="english/page/1005/training.html">Training</a></li>
+                        <li><a href="english/page/1016/alumni-office.html">Alumni Office</a></li>
+                        <li><a href="graduation-projects.html">Graduation Projects</a></li>
+                        <li><a href="contact-us.html">Contact form, suggestions & complaints</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Quality & certification</span>
+                    <ul class="subMenu">
+                        <li><a href="english/quality-certification/1007/about-quality.html">About Quality</a></li><li><a href="english/quality-certification/1008/quality-unit-committees.html">Quality Unit Committees</a></li><li><a href="english/quality-certification/1009/opinion-polls.html">Opinion Polls</a></li><li><a href="english/quality-certification/1010/quality-attachments.html">Quality Attachments</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Recruitment</span>
+                    <ul class="subMenu">
+                        <li><a href="job-vacancies.html">Job Vacancies</a></li>
+                        <li><a href="recruitment-office.html">Recruitment Office</a></li>
+                        <li><a href="announce-a-job.html">Annoucement a Job</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Schedules</span>
+                    <ul class="subMenu">
+                        <li><a href="schedules/1006/Final-Exam-Schedules.html">Final Exam Schedules</a></li><li><a href="schedules/1007/Mid-Exam-Schedules.html">Mid Exam Schedules</a></li><li><a href="schedules/1005/Study-Schedules.html">Study Schedules</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Administrations</span>
+                    <ul class="subMenu">
+                        <li><a href="english/page/1011/accounts.html">Accounts</a></li>
+                        <li><a href="english/page/1007/student-affairs.html">Student Affairs</a></li>
+                        <li><a href="english/page/1012/human-resources.html">Human Resources</a></li>
+                        <li><a href="english/page/1014/legal-affairs.html">Legal Affairs</a></li>
+                        <li><a href="english/page/1013/public-relations.html">Public Relations</a></li>
+                        <li><a href="english/page/1008/information-technology.html">Information Technology</a></li>
+                        <li><a href="english/page/1021/crisis-and-disaster-management-unit.html">Crisis and Disaster Management Unit</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">Attachments</span>
+                    <ul class="subMenu">
+                        <li><a href="attachments/1004/Student-Guide.html">Student Guide</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="banner">
+        <div id="headHD">
+            <div class="diamondTails diamondTailsLight">
+                <span id="headSpan" class="circle">About MHIET</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height:700px;text-align:left;clear:both">
+        <div style="width:100%">
+            <div class="leftContent">
+                <h1>
+                    Video Gallery
+                </h1>
+                <div id="bodyLeft">
+                    
+<div id="dimmer"></div>
+<div id="h1BG"></div>
+<h2>Definition of Quality Assurance standards</h2><ul class="videoList"><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1031/Quality-Management-and-Development" id="1031"><span><img src="vi/auBn9VIhhPQ/hqdefault.jpg" alt="Quality Management and Development"><i class="play"></i></span><span title="Quality Management and Development">Quality Management and Development</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1030/Faculty-Standard" id="1030"><span><img src="vi/6crY8LLlci8/hqdefault.jpg" alt="Faculty Standard"><i class="play"></i></span><span title="Faculty Standard">Faculty Standard</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1029/Management-Standard" id="1029"><span><img src="vi/PYuh-u9W7s0/hqdefault.jpg" alt="Management Standard"><i class="play"></i></span><span title="Management Standard">Management Standard</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1028/Financial-and-Material-Resources" id="1028"><span><img src="vi/foCZCkungoA/hqdefault.jpg" alt="Financial and Material Resources"><i class="play"></i></span><span title="Financial and Material Resources">Financial and Material Resources</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1027/Academic-standards-and-programs" id="1027"><span><img src="vi/Eu8mXhhlx7U/hqdefault.jpg" alt="Academic standards and programs"><i class="play"></i></span><span title="Academic standards and programs">Academic standards and programs</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1026/Teaching-Learning" id="1026"><span><img src="vi/WkzC_f7NYhs/hqdefault.jpg" alt="Teaching and Learning"><i class="play"></i></span><span title="Teaching and Learning">Teaching and Learning</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1025/Community-participation" id="1025"><span><img src="vi/Cb15aF4Eosw/hqdefault.jpg" alt="Community participation and environmental development"><i class="play"></i></span><span title="Community participation and environmental development">Community participation and environmental development</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1024/scientific-research-scientific-scientifi" id="1024"><span><img src="vi/d_N5Yr3CKSw/hqdefault.jpg" alt="scientific research and scientific activities"><i class="play"></i></span><span title="scientific research and scientific activities">scientific research and scientific activities</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1023/students-graduates" id="1023"><span><img src="vi/z89XmxU3sgs/hqdefault.jpg" alt="Standard for students and graduates"><i class="play"></i></span><span title="Standard for students and graduates">Standard for students and graduates</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1022/standard-leadership" id="1022"><span><img src="vi/PUmhtqAYmiw/hqdefault.jpg" alt="Standard of Leadership"><i class="play"></i></span><span title="Standard of Leadership">Standard of Leadership</span></a></div></li><li><div><a href="/video-gallery/Definition-of-Quality-Assurance-standards/1021/strategic-planning" id="1021"><span><img src="vi/M95w1kwLJZA/hqdefault.jpg" alt="Explanation of the strategic planning standard"><i class="play"></i></span><span title="Explanation of the strategic planning standard">Explanation of the strategic planning standard</span></a></div></li></ul><div class="split"></div><h2>Online course registration</h2><ul class="videoList"><li><div><a href="/video-gallery/Online-course-registration/1020/Entering-IbnAl-Haytham-system" id="1020"><span><img src="vi/zlz7GaKQKuQ/hqdefault.jpg" alt="Entering the Ibn Al-Haytham system and registering courses"><i class="play"></i></span><span title="Entering the Ibn Al-Haytham system and registering courses">Entering the Ibn Al-Haytham system and registering courses</span></a></div></li><li><div><a href="/video-gallery/Online-course-registration/1019/Submit-registration-cards-academic" id="1019"><span><img src="vi/9vqB5HWwevI/hqdefault.jpg" alt="Submit registration cards to the academic advisor via MS Teams"><i class="play"></i></span><span title="Submit registration cards to the academic advisor via MS Teams">Submit registration cards to the academic advisor via MS Teams</span></a></div></li></ul><div class="split"></div><h2>E-Learning on Microsoft Teams</h2><ul class="videoList"><li><div><a href="/video-gallery/E-Learning-on-Microsoft-Teams/1018/Lectures-on-Microsoft-Teams" id="1018"><span><img src="vi/VEX83IFATWI/hqdefault.jpg" alt="Lectures on Microsoft Teams"><i class="play"></i></span><span title="Lectures on Microsoft Teams">Lectures on Microsoft Teams</span></a></div></li><li><div><a href="/video-gallery/E-Learning-on-Microsoft-Teams/1017/Activate-the-academic-account" id="1017"><span><img src="vi/tSiwrlfAk9E/hqdefault.jpg" alt="Activate the academic account"><i class="play"></i></span><span title="Activate the academic account">Activate the academic account</span></a></div></li></ul><div class="split"></div><h2>Scientific Competitions And Seminars</h2><ul class="videoList"><li><div><a href="/video-gallery/Scientific-Competitions-And-Seminars/1004/self-driving-cars" id="1004"><span><img src="vi/im4wET7LWsU/hqdefault.jpg" alt="Self-Driving cars powered with electric and solar energy"><i class="play"></i></span><span title="Self-Driving cars powered with electric and solar energy">Self-Driving cars powered with electric and solar energy</span></a></div></li><li><div><a href="/video-gallery/Scientific-Competitions-And-Seminars/1003/electrical-and-computer-engineering" id="1003"><span><img src="vi/IT_zVTtkCIk/hqdefault.jpg" alt="Department of Electrical and Computer Engineering"><i class="play"></i></span><span title="Department of Electrical and Computer Engineering">Department of Electrical and Computer Engineering</span></a></div></li><li><div><a href="/video-gallery/Scientific-Competitions-And-Seminars/1002/experiences-in-mechatronics-engineering" id="1002"><span><img src="vi/dX_5BvWHo_4/hqdefault.jpg" alt="Student experiences in mechatronics engineering"><i class="play"></i></span><span title="Student experiences in mechatronics engineering">Student experiences in mechatronics engineering</span></a></div></li><li><div><a href="/video-gallery/Scientific-Competitions-And-Seminars/1001/winners-of-the-architecture-competition" id="1001"><span><img src="vi/yHO_KYvtle0/hqdefault.jpg" alt="Honoring the winners of the architecture department competition"><i class="play"></i></span><span title="Honoring the winners of the architecture department competition">Honoring the winners of the architecture department competition</span></a></div></li></ul><div class="split"></div><h2>Basic Sciences Department - Lectures In Math</h2><ul class="videoList"><li><div><a href="/video-gallery/Basic-Sciences-Department---Lectures-In-Math/1009/The-fifth-lecture-in-math-c" id="1009"><span><img src="vi/I0bJuIWu-FU/hqdefault.jpg" alt="The fifth lecture in math (C) Dr. Rasha Abdel Azim"><i class="play"></i></span><span title="The fifth lecture in math (C) Dr. Rasha Abdel Azim">The fifth lecture in math (C) Dr. Rasha Abdel Azim</span></a></div></li><li><div><a href="/video-gallery/Basic-Sciences-Department---Lectures-In-Math/1008/The-fourth-lecture-in-math-c" id="1008"><span><img src="vi/-29o9JYY6xA/hqdefault.jpg" alt="The fourth lecture in math (C) Dr. Rasha Abdel Azim"><i class="play"></i></span><span title="The fourth lecture in math (C) Dr. Rasha Abdel Azim">The fourth lecture in math (C) Dr. Rasha Abdel Azim</span></a></div></li><li><div><a href="/video-gallery/Basic-Sciences-Department---Lectures-In-Math/1007/The-third-lecture-in-math-c" id="1007"><span><img src="vi/Eg2KpkVkeM8/hqdefault.jpg" alt="The third lecture in math (C) Dr. Rasha Abdel Azim"><i class="play"></i></span><span title="The third lecture in math (C) Dr. Rasha Abdel Azim">The third lecture in math (C) Dr. Rasha Abdel Azim</span></a></div></li><li><div><a href="/video-gallery/Basic-Sciences-Department---Lectures-In-Math/1006/The-second-lecture-in-math-c" id="1006"><span><img src="vi/QLIW2BulBus/hqdefault.jpg" alt="The second lecture in math (C) Dr. Rasha Abdel Azim"><i class="play"></i></span><span title="The second lecture in math (C) Dr. Rasha Abdel Azim">The second lecture in math (C) Dr. Rasha Abdel Azim</span></a></div></li><li><div><a href="/video-gallery/Basic-Sciences-Department---Lectures-In-Math/1005/The-first-lecture-in-math-c" id="1005"><span><img src="vi/yxdomOV8Aks/hqdefault.jpg" alt="The first lecture in math (C) Dr. Rasha Abdel Azim"><i class="play"></i></span><span title="The first lecture in math (C) Dr. Rasha Abdel Azim">The first lecture in math (C) Dr. Rasha Abdel Azim</span></a></div></li></ul><div class="split"></div><h2>Basic Science - Production Workshops</h2><ul class="videoList"><li><div><a href="/video-gallery/Basic-Science---Production-Workshops/1013/milling" id="1013"><span><img src="vi/Ecolq97UuHQ/hqdefault.jpg" alt="Milling"><i class="play"></i></span><span title="Milling">Milling</span></a></div></li><li><div><a href="/video-gallery/Basic-Science---Production-Workshops/1012/turning" id="1012"><span><img src="vi/ZQLg1njCZhk/hqdefault.jpg" alt="Turning"><i class="play"></i></span><span title="Turning">Turning</span></a></div></li><li><div><a href="/video-gallery/Basic-Science---Production-Workshops/1011/welding" id="1011"><span><img src="vi/pBXfUNhRZyM/hqdefault.jpg" alt="Welding"><i class="play"></i></span><span title="Welding">Welding</span></a></div></li><li><div><a href="/video-gallery/Basic-Science---Production-Workshops/1010/parts-of-the-shredder-machine" id="1010"><span><img src="vi/TVOZ3ZMEDhI/hqdefault.jpg" alt="Explanation of the parts of the shredder machine"><i class="play"></i></span><span title="Explanation of the parts of the shredder machine">Explanation of the parts of the shredder machine</span></a></div></li></ul><div class="split"></div><h2>Basic Science - Lectures In Physics C</h2><ul class="videoList"><li><div><a href="/video-gallery/Basic-Science---Lectures-In-Physics-C/1016/diffraction" id="1016"><span><img src="vi/e5sfiGiAHyM/hqdefault.jpg" alt="The third lecture in Physics (C) Dr. Mohamed Nabil Abdel Salam"><i class="play"></i></span><span title="The third lecture in Physics (C) Dr. Mohamed Nabil Abdel Salam">The third lecture in Physics (C) Dr. Mohamed Nabil Abdel Salam</span></a></div></li><li><div><a href="/video-gallery/Basic-Science---Lectures-In-Physics-C/1015/X-rays-production-properties" id="1015"><span><img src="vi/36s8FvlKLao/hqdefault.jpg" alt="The Second Lecture In Physics (C) Dr. Mohamed Nabil Abdel Salam"><i class="play"></i></span><span title="The Second Lecture In Physics (C) Dr. Mohamed Nabil Abdel Salam">The Second Lecture In Physics (C) Dr. Mohamed Nabil Abdel Salam</span></a></div></li><li><div><a href="/video-gallery/Basic-Science---Lectures-In-Physics-C/1014/compton-effect" id="1014"><span><img src="vi/mciCTe1tR64/hqdefault.jpg" alt="The First Lecture in Physics (C) Dr. Mohamed Nabil"><i class="play"></i></span><span title="The First Lecture in Physics (C) Dr. Mohamed Nabil">The First Lecture in Physics (C) Dr. Mohamed Nabil</span></a></div></li></ul><div class="split"></div>
+
+                </div>
+            </div>
+            <div class="rightContent">
+                
+                <div>
+                    <h4>Links to</h4>
+                    <a href="academic-calendar.html">Academic Calendar</a>
+                    <a href="https://www.office.com/" target="_blank">Email Login</a>
+                </div>
+                <div>
+                    <h4>Media</h4>
+                    <a href="/news-events-announcements?display=news">News</a>
+                    <a href="/news-events-announcements?display=events">Events</a>
+                    <a href="/news-events-announcements?display=announcements">Announcements</a>
+                    <a href="photo-album.html">Photo Album</a>
+                    <a href="video-gallery.html">Video Album</a>
+                </div>
+
+                <div>
+                    <h4>Recruitment</h4>
+                    <a href="job-vacancies.html">Job Vacancies</a>
+                    <a href="recruitment-office.html">Recruitment Office</a>
+                    <a href="announce-a-job.html">Announce a Job</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div id="socialDiv">
+                    <a href="https://www.youtube.com/channel/UCH2eN_qoqLx0aGD3GrrErhA" target="_blank"><i class="youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/el-minya-high-institute-for-engineering-and-technology/about/?viewAsMember=true" target="_blank"><i class="linkedin"></i></a>
+                    <a href="https://www.facebook.com/mhiet.edu.eg" target="_blank"><i class="facebook"></i></a>
+                    <a href="https://twitter.com/mhietedueg" target="_blank"><i class="twitter" target="_blank"></i></a>
+                </div>
+                <div id="footerLinkCont">
+                    <div id="locDiv">
+                        <a href="https://bit.ly/mhiet-location" target="_blank">
+                            <span>Industrial Area - New Minya - El Minya<i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <img src="images/location.jpg" alt="location" width="1000" height="701">
+                                <i class="route"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerLinksDiv" id="contactUsColumn">
+                        <h5>Contact Us</h5>
+                        <ul class="footerLinksUL" id="footerLinksULContact">
+                            <li><a href="contact-us.html">Contact form, suggestions & complaints<svg><use xlink:href="/images/icons.svg#contactForm"></use></svg></a></li>
+                            <li><a href="tel:0020086-2290608">086-2290608<svg><use xlink:href="/images/icons.svg#footerTelephone"></use></svg></a></li>
+                            <li><a href="mailto:admin@mhiet.edu.eg"><span style="font-size:14px">admin@mhiet.edu.eg</span><svg><use xlink:href="/images/icons.svg#footerEmail"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinksDiv" id="footerLinksColumn">
+                        <h5>Important Links</h5>
+                        <ul class="footerLinksUL">
+                            <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                            <li><a href="https://www.office.com/" target="_blank">Email Login</a></li>
+                            <li><a href="http://eea.org.eg/" target="_blank">Engineers Syndicate</a></li>
+                            <li><a href="http://portal.mohesr.gov.eg/" target="_blank">Ministry of Higher Education</a></li>
+                            <li><a href="https://www.egypt.gov.eg/" target="_blank">E-government Portal</a></li>
+                            <li><a href="https://tansik.egypt.gov.eg/application/" target="_blank">Coordination Services</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div id="CR">
+                    Copyright © 2024 El Minya High Institute. All Rights Reserved<br>
+                    <a href="https://newvitalsoft.com" target="_blank">Powered by New Vital Soft</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="hamMenu">
+        <div class="hamTop">
+            <div class="nefDiamond"></div>
+            <div class="hamEnglish">
+                <a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html" id="hamEngLink">
+                    <svg><use xlink:href="/images/icons.svg#arabic"></use></svg>
+                    <span>Arabic Interface</span>
+                </a>
+            </div>
+            <img src="images/nefertari.png" class="hamLogo" alt="nefertari" width="68" height="89">
+            <span class="hamLogoText">Higher Institute of Engineering and Technology</span>
+        </div>
+        <div class="hamBody">
+            <ul class="hamNav"></ul>
+        </div>
+    </div>
+    <div class="hamCirc"></div>
+    <script src="ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/util.js"></script>
+    <script type="text/javascript" src="js/sharethis.js#property=5e9e1f966f740100124ea997&product=sticky-share-buttons&cms=sop" async="async"></script>
+    
+<div id="videoMainCont"><div id="videoCont"><i id="close"></i><h3></h3><div class="sharethis-inline-share-buttons"></div><div class="clear"></div><div id="videoWrapper"></div><div id="desc"></div></div></div>
+<script type="text/javascript">
+    var url, AJAXReq, workInProcess = false, playDiv;
+    var player;
+    $('#close').click(function () { closeModal(); });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) closeModal();
+    });
+
+    $('#videoMainCont').click(function (e) {
+        if (e.target.id === "videoMainCont") closeModal();
+    });
+
+    function closeModal() {
+        if ($('#dimmer').is(':visible')) {
+            $('#videoMainCont').css('z-index', '-1');
+            $('#videoCont').css('top', '-' + ($('#videoCont').outerHeight() + 2000) +'px');
+            $('#dimmer').fadeOut('fast', function () { player.destroy(); $('#videoWrapper').empty(); });
+            playDiv.show();
+        }
+    };
+
+    $('.videoList a').click(function (e) {
+        e.preventDefault();
+        if (workInProcess) return;
+
+        if (AJAXReq) { AJAXReq.abort();$('#iLoader').fadeOut('slow', function () { $(this).remove(); }); }
+        playDiv = $(this).find('.play');
+            
+        $(this).blur().parents('li').append('<div id="iLoader"><div id="aniMask"></div><div id="aniBg"></div><div id="anim"></div></div>');
+        playDiv.hide();
+        $('#iLoader').fadeIn("fast"); 
+        
+        AJAXReq = $.get('/English/getVideo.ashx?id=' + $(this).prop('id'), function (d) {eval(d);});
+        workInProcess = true;
+    });
+
+    function showVideo(status, h3, vID, desc, _url) {
+        if (status == 1) {
+            $('h3').text(h3);
+            url = _url;
+            $('#desc').text(desc);
+            $('#videoWrapper').empty().append('<div id="videoPlayerDiv"></div>');
+            
+            player = new YT.Player('videoPlayerDiv', {
+                height: '100%',
+                width: '100%',
+                videoId: vID,
+                playerVars: {showinfo:0,theme:'light',rel:0,modestbranding:1,autohide:1,autoplay:0,iv_load_policy:3},
+                events: { 'onReady': onPlayerReady }
+            });
+        }
+        else {
+            alert('حدث خطأ غير متوقع.');
+            workInProcess = false;
+            $('#iLoader').fadeOut('slow', function () { $('#iLoader').remove();});
+        }
+    };
+
+    
+    function onPlayerReady(event) {
+        $('#iLoader').fadeOut('slow', function () { $('#iLoader').remove(); 
+        $('#dimmer').fadeIn('slow', function () {
+            $('#videoMainCont').css({ zIndex: 100002, height: ($(window).height() + $(window).scrollTop()) + 'px', width: $(window).width() + 'px' });
+            $('#videoCont').animate({ 'top': $(window).scrollTop() + 'px' });
+            workInProcess = false;
+            const buttons = $(".sharethis-inline-share-buttons");
+            buttons.attr("data-url", window.location.href + "/" + url);
+            buttons.attr("data-title", $("#videoCont").find("h3").text());
+            player.playVideo();
+        });
+        });
+    };
+
+    $(window).resize(function () {  $('#videoMainCont').css({ height: ($(window).height() + $(window).scrollTop()) + 'px', width: $(window).width() + 'px' }); });
+</script>
+
+</body>
+</html>

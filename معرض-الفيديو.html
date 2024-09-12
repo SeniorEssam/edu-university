@@ -1,0 +1,427 @@
+﻿
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00A8DA">
+    <meta property="og:site_name" content="El Minya Higher Institute of Engineering & Technology">
+    <meta property="og:image" content="https://mhiet.edu.eg/images/arSocialShare.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:url" content="https://mhiet.edu.eg/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="arCSS/s.css">
+    
+    <title>معرض الفيديو</title>
+    <meta name="description" content="معرض الفيديو بالمعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة">
+    <meta name="keywords" content="معرض الفيديو،ألبوم الفيديو، فيديوهات، فيديو، فيديوهات عن المعهد، ألبوم الملتيمديا">
+    <meta property="og:title" content="معرض الفيديو بالمعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة">
+    <meta property="og:description" content="معرض الفيديو بالمعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة">
+<style type="text/css">
+.noRes{margin-right:20px}
+.rightContent{width:100%}
+.leftContent{display:none}
+.videoList div:first-child, .videoList img {transition:all 0.2s linear}
+.videoList{margin:20px 0;padding:0;list-style:none;display:block;text-align:right;width:100%}
+.videoList li{position:relative;width:222px;height:200px;display:inline-block;margin:20px 27px}
+.videoList div:first-child{padding:4px;width:100%;height:100%;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:relative;box-shadow:0 0 16px rgba(0,0,0,.3)}
+.videoList div:first-child:hover{box-shadow:0 0 26px rgba(0,0,0,.4)}
+.videoList span:first-child{width:214px;height:160px;display:block;overflow:hidden}
+.videoList img{max-width:100%;height:auto}
+.videoList a{color:#7c8197 !important}
+.videoList a:hover{color:#615394 !important}
+.videoList span:last-child{width:214px;height:50px;display:block;text-align:right;float:right;margin-top:4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:10pt}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .videoList{text-align:center}
+}
+.play{position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -20px;
+    transition: .5s ease all;
+    font-size: 30pt;
+    color: #ffffff;
+    box-shadow: 0 0 16px rgba(0,0,0,.5);
+    border-radius: 50%;
+    background: rgba(0,0,0,.3);transition:.5s ease all}
+.play:before{content:"\f144"}
+.videoList div:hover .play{color:#2196f3} 
+h2{margin-right:10px}
+.videoList div:hover img{-webkit-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
+.split{display:block;margin:20px auto 40px;height:1px;background:rgba(0,0,0,.1)}
+#dimmer{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);z-index:100001;display:none}
+#videoMainCont{display:block;position:absolute;top:0;left:0;right:0;bottom:0;padding:20px 10px;z-index:-1;background:url(images/pixel.png)}
+#videoCont{background:#fff;max-width:750px;margin:0 auto;position:relative;padding:10px;box-shadow:0 0 20px #8f9196;border-radius:4px;border:0px solid #7c8197;top:-2000px;text-align:right;direction:rtl}
+#videoWrapper {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;margin-bottom:10px;max-width:750px}
+h3{margin:0 0 10px 20px;font-size:14pt;font-weight:normal}
+#videoWrapper iframe {position:absolute;top:0;left:0;width:100%;height:100%}
+#desc{color:#7c8197;font-size:11pt}
+#close{transition:.5s ease all;z-index:100;top:5px;left:5px;position:absolute;cursor:pointer;color:#C3608A;font-size:24px;font-weight:400}
+#close:before {content: "\f057" }
+#close:hover{color:#3f51b5}
+#iLoader{width:222px;height:200px;position:absolute;top:0;left:0;z-index:101;display:none}
+#aniMask{background:rgba(0,0,0,0.7);opacity:.75;width:222px;height:200px}
+#aniBg{position:absolute;left:50%;top:50%;margin-left:-25px;margin-top:-39px;width:50px;height:50px;background-color:#f5f5f5;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;opacity:.6;box-shadow:0 0 20px #8f9196;border:1px solid #8f9196}
+#anim {display:inline-block;position:absolute;left:50%;top:50%;margin-left:-25px;margin-top:-39px}
+#anim:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 25px solid #0387cd;
+  border-color: #0387cd transparent #0387cd transparent;
+  animation: anim 1.2s infinite;
+}
+@keyframes anim {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+@media only screen and (min-width:0) and (max-width:480px) {.videoList li{margin:10px 0}}
+.sharethis-inline-share-buttons{margin-bottom:10px}
+</style>
+<script>var tag = document.createElement('script');tag.src = "https://www.youtube.com/iframe_api";var firstScriptTag = document.getElementsByTagName('script')[0];firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);</script>
+
+    <style>#banner{background-image: url(images/header/ar/194/1202103090229263988797.jpg)}</style>
+</head>
+<body>
+    <div class="dropMenu"><ul class="menu" id="topDropMenu"></ul></div>
+    <div class="container">
+        <header>
+            <div class="header section">
+                
+                <div id="topLeftLinks">
+                    <a href="video-gallery.html">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#english"></use></svg>
+                        <span>English Interface</span>
+                    </a>
+                    <a href="mailto:admin@mhiet.edu.eg">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#email"></use></svg>
+                        <span>admin@mhiet.edu.eg</span>
+                    </a>
+                    <a href="tel:002086-2290608">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#telephone"></use></svg>
+                        <span>086-2290608</span>
+                    </a>
+                </div>
+                <a href="index-1.htm" id="logo"><img src="images/arabic-logo.png" alt="المعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة" width="236" height="76"></a>
+                <div class="hamDiamod"></div>
+                <svg class="ham" viewbox="0 0 100 100" width="60">
+                    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                    <path class="line middle" d="m 30,50 h 40"></path>
+                    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                </svg>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li class="parentMenu">
+                    <span class="dropList">عن المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1000/%D9%86%D8%B4%D8%A3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">نشأة المعهد</a></li>
+                        <li><a href="arabic/page/1001/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9.html">نظام الدراسة</a></li>
+                        <li><a href="arabic/page/1010/%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D8%AF-%D9%88-%D8%A7%D9%84%D9%88%D9%83%D9%84%D8%A7%D8%A1.html">مكتب العميد والوكلاء</a></li>
+                        <li><a href="arabic/page/1018/%D8%A7%D9%84%D8%B1%D8%A4%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D9%88-%D8%A7%D9%84%D8%A3%D9%87%D8%AF%D8%A7%D9%81.html">الرؤية والرسالة والاهداف</a></li>
+                        <li><a href="arabic/page/1022/%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9.html">المجلة العلمية</a></li>
+                        <li><a href="arabic/page/1015/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9.html">خدمة المجتمع</a></li>
+                        <li><a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a></li>
+                        <li><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديو</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA.html">الأخبار والأحداث والإعلانات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أقسام المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1004/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9.html">قسم العلوم الأساسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1001/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D8%A9.html">قسم الهندسة المدنية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1000/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9.html">قسم الهندسة المعمارية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1002/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA.html">قسم الهندسة الكهربية والحاسبات</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1003/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D8%AA%D8%B1%D9%88%D9%86%D9%83%D8%B3.html">قسم الهندسة الميكانيكية – ميكاترونكس</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أعضاء هيئة التدريس</span>
+                    <ul class="subMenu">
+                        <li><a href="https://staffportal.mhiet.edu.eg" target="_blank">مواقع أعضاء هيئة التدريس</a></li>
+                        <li><a href="https://www.researchgate.net/institution/El_Minya_High_Institute_For_Engineering_and_Technology" target="_blank">MHIET ResearchGate</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الالتحاق بالمعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1017/%D8%A7%D9%84%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%82-%D9%84%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">الالتحاق للدراسة بالمعهد</a></li>
+                        <li><a href="arabic/page/1020/%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الرسوم الدراسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%B1%D8%B1%D8%A9.html">الاسئلة الشائعة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الطلاب والخريجون</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D9%88-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%88%D9%86.html">تسجيل الدخول</a></li>
+                        <li><a href="%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.html">المكتبة الإلكترونية</a></li>
+                        <li><a href="arabic/page/1006/%D8%A5%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">إتحاد الطلاب</a></li>
+                        <li><a href="arabic/page/1009/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">رعاية الطلاب</a></li>
+                        <li><a href="arabic/page/1002/%D8%A7%D9%84%D8%B3%D9%83%D9%86.html">السكن</a></li>
+                        <li><a href="arabic/page/1003/%D8%A7%D9%84%D9%86%D9%82%D9%84-%D9%88-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A7%D8%AA.html">النقل</a></li>
+                        <li><a href="arabic/page/1004/%D8%A7%D9%84%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A.html">التأمين الطبي</a></li>
+                        <li><a href="arabic/page/1005/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.html">التدريب</a></li>
+                        <li><a href="arabic/page/1016/%D9%85%D9%83%D8%AA%D8%A8-%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">مكتب الخريجين</a></li>
+                        <li><a href="%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC.html">مشاريع التخرج</a></li>
+                        <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجودة والاعتماد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/quality-certification/1007/about-quality.html">عن الجودة</a></li><li><a href="arabic/quality-certification/1008/quality-unit-committees.html">لجان وحدة الجودة</a></li><li><a href="arabic/quality-certification/1009/opinion-polls-and-their-results.html">نماذج استطلاع الراي</a></li><li><a href="arabic/quality-certification/1010/quality-attachments.html">الإصدارات والمرفقات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">التوظيف</span>
+                    <ul class="subMenu">
+                        <li><a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a></li>
+                        <li><a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a></li>
+                        <li><a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجداول</span>
+                    <ul class="subMenu">
+                      <li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1005/%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الجداول الدراسية</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1006/%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جداول إمتحانات نهاية الفصل</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1007/%D8%AC%D8%AF%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D9%86%D8%AA%D8%B5%D9%81-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جدول إمتحانات منتصف الفصل</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الإدارات</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1011/%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA.html">الحسابات</a></li>
+                        <li><a href="arabic/page/1007/%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">شئون الطلاب</a></li>
+                        <li><a href="arabic/page/1012/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9.html">الموارد البشرية</a></li>
+                        <li><a href="arabic/page/1014/%D8%A7%D9%84%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9.html">الشئون القانونية</a></li>
+                        <li><a href="arabic/page/1013/%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9.html">العلاقات العامة</a></li>
+                        <li><a href="arabic/page/1008/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.html">تكنولوجيا المعلومات</a></li>
+                        <li><a href="arabic/page/1021/%D9%88%D8%AD%D8%AF%D8%A9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%B2%D9%85%D8%A7%D8%AA-%D9%88-%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.html">وحدة إدارة الأزمات والكوارث</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">مرفقات هامة</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%D8%A7%D8%AA/1004/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8.html">دليل الطالب</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="banner">
+        <div id="headHD">
+            <div class="diamondTails diamondTailsLight">
+                <span id="headSpan" class="circle">عـــن المـــعهد</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height:700px;text-align:right">
+    <div style="width:100%">
+    <div class="rightContent">
+        <h1>
+           معرض الفيديو
+        </h1>
+        <div id="bodyRight">
+            
+<div id="dimmer"></div>
+<div id="h1BG"></div>
+<h2>التعريف بمعايير الجودة والإعتماد</h2><ul class="videoList"><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1031/Quality-Management-and-Development.html" id="1031"><span><img src="vi/auBn9VIhhPQ/hqdefault.jpg" alt="معيار إدارة الجودة والتطوير"><i class="play"></i></span><span title="معيار إدارة الجودة والتطوير">معيار إدارة الجودة والتطوير</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1030/Faculty-Standard.html" id="1030"><span><img src="vi/6crY8LLlci8/hqdefault.jpg" alt="معيار أعضاء هيئة التدريس"><i class="play"></i></span><span title="معيار أعضاء هيئة التدريس">معيار أعضاء هيئة التدريس</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1029/Management-Standard.html" id="1029"><span><img src="vi/PYuh-u9W7s0/hqdefault.jpg" alt="معيار الجهاز الإداري"><i class="play"></i></span><span title="معيار الجهاز الإداري">معيار الجهاز الإداري</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1028/Financial-and-Material-Resources.html" id="1028"><span><img src="vi/foCZCkungoA/hqdefault.jpg" alt="معيار الموارد المالية والمادية"><i class="play"></i></span><span title="معيار الموارد المالية والمادية">معيار الموارد المالية والمادية</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1027/Academic-standards-and-programs.html" id="1027"><span><img src="vi/Eu8mXhhlx7U/hqdefault.jpg" alt="المعايير الاكاديمية والبرامج"><i class="play"></i></span><span title="المعايير الاكاديمية والبرامج">المعايير الاكاديمية والبرامج</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1026/Teaching-Learning.html" id="1026"><span><img src="vi/WkzC_f7NYhs/hqdefault.jpg" alt="معيار التدريس والتعلم"><i class="play"></i></span><span title="معيار التدريس والتعلم">معيار التدريس والتعلم</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1025/Community-participation.html" id="1025"><span><img src="vi/Cb15aF4Eosw/hqdefault.jpg" alt="معيار المشاركة المجتمعية وتنمية البيئة"><i class="play"></i></span><span title="معيار المشاركة المجتمعية وتنمية البيئة">معيار المشاركة المجتمعية وتنمية البيئة</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1024/scientific-research-scientific-scientifi.html" id="1024"><span><img src="vi/d_N5Yr3CKSw/hqdefault.jpg" alt="معيار البحث العلمي والأنشطة العلمية"><i class="play"></i></span><span title="معيار البحث العلمي والأنشطة العلمية">معيار البحث العلمي والأنشطة العلمية</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1023/students-graduates.html" id="1023"><span><img src="vi/z89XmxU3sgs/hqdefault.jpg" alt="معيار الطلاب والخريجين"><i class="play"></i></span><span title="معيار الطلاب والخريجين">معيار الطلاب والخريجين</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1022/standard-leadership.html" id="1022"><span><img src="vi/PUmhtqAYmiw/hqdefault.jpg" alt="معيار القيادة والحوكمة"><i class="play"></i></span><span title="معيار القيادة والحوكمة">معيار القيادة والحوكمة</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D8%AA%D9%85%D8%A7%D8%AF/1021/strategic-planning.html" id="1021"><span><img src="vi/M95w1kwLJZA/hqdefault.jpg" alt="شرح معيار التخطيط الاستراتيجي"><i class="play"></i></span><span title="شرح معيار التخطيط الاستراتيجي">شرح معيار التخطيط الاستراتيجي</span></a></div></li></ul><div class="split"></div><h2>التسجيل الإلكتروني للمقررات</h2><ul class="videoList"><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%84%D9%84%D9%85%D9%82%D8%B1%D8%B1%D8%A7%D8%AA/1020/%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D8%B9%D9%84%D9%8A-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%87%D9%8A%D8%AB%D9%85.html" id="1020"><span><img src="vi/zlz7GaKQKuQ/hqdefault.jpg" alt="الدخول علي نظام ابن الهيثم وتسجيل المقررات"><i class="play"></i></span><span title="الدخول علي نظام ابن الهيثم وتسجيل المقررات">الدخول علي نظام ابن الهيثم وتسجيل المقررات</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%84%D9%84%D9%85%D9%82%D8%B1%D8%B1%D8%A7%D8%AA/1019/%D8%AA%D8%B3%D9%84%D9%8A%D9%85-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D9%84%D9%84%D9%85%D8%B1%D8%B4%D8%AF.html" id="1019"><span><img src="vi/9vqB5HWwevI/hqdefault.jpg" alt="تسليم بطاقات التسجيل للمرشد الأكاديمي عبر Microsoft Teams"><i class="play"></i></span><span title="تسليم بطاقات التسجيل للمرشد الأكاديمي عبر Microsoft Teams">تسليم بطاقات التسجيل للمرشد الأكاديمي عبر Microsoft Teams</span></a></div></li></ul><div class="split"></div><h2>التعليم الإلكتروني علي Microsoft Teams</h2><ul class="videoList"><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%B9%D9%84%D9%8A-Microsoft-Teams/1018/Microsoft-Teams-%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%B9%D9%84%D9%8A.html" id="1018"><span><img src="vi/VEX83IFATWI/hqdefault.jpg" alt="Microsoft Teams متابعة المحاضرات علي تطبيق"><i class="play"></i></span><span title="Microsoft Teams متابعة المحاضرات علي تطبيق">Microsoft Teams متابعة المحاضرات علي تطبيق</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%B9%D9%84%D9%8A-Microsoft-Teams/1017/%D8%AA%D9%86%D8%B4%D9%8A%D8%B7-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A.html" id="1017"><span><img src="vi/tSiwrlfAk9E/hqdefault.jpg" alt="تنشيط الحساب الأكاديمي"><i class="play"></i></span><span title="تنشيط الحساب الأكاديمي">تنشيط الحساب الأكاديمي</span></a></div></li></ul><div class="split"></div><h2>المسابقات والندوات العلمية</h2><ul class="videoList"><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/1004/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D8%A9.html" id="1004"><span><img src="vi/im4wET7LWsU/hqdefault.jpg" alt="السيارات ذاتية القيادة التي تعمل بالطاقة الكهربائية والشمسية"><i class="play"></i></span><span title="السيارات ذاتية القيادة التي تعمل بالطاقة الكهربائية والشمسية">السيارات ذاتية القيادة التي تعمل بالطاقة الكهربائية والشمسية</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/1003/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA.html" id="1003"><span><img src="vi/IT_zVTtkCIk/hqdefault.jpg" alt="قسم الهندسة الكهربية والحاسبات"><i class="play"></i></span><span title="قسم الهندسة الكهربية والحاسبات">قسم الهندسة الكهربية والحاسبات</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/1002/%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A8%D9%82%D8%B3%D9%85-%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%83%D8%A7%D8%AA%D8%B1%D9%88%D9%86%D9%83%D8%B3.html" id="1002"><span><img src="vi/dX_5BvWHo_4/hqdefault.jpg" alt="تجارب الطلاب بقسم هندسة الميكاترونكس"><i class="play"></i></span><span title="تجارب الطلاب بقسم هندسة الميكاترونكس">تجارب الطلاب بقسم هندسة الميكاترونكس</span></a></div></li><li><div><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/1001/%D8%A7%D9%84%D9%81%D8%A7%D8%A6%D8%B2%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A9-%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9.html" id="1001"><span><img src="vi/yHO_KYvtle0/hqdefault.jpg" alt="تكريم الفائزين في مسابقة قسم الهندسة المعمارية"><i class="play"></i></span><span title="تكريم الفائزين في مسابقة قسم الهندسة المعمارية">تكريم الفائزين في مسابقة قسم الهندسة المعمارية</span></a></div></li></ul><div class="split"></div><h2>قسم العلوم الاساسية - محاضرات في مادة رياضة ج</h2><ul class="videoList"><li><div><a href="/معرض-الفيديو/قسم-العلوم-الاساسية---محاضرات-في-مادة-رياضة-ج/1009/المحاضرة-الخامسة-في-مادة-رياضة-ج" id="1009"><span><img src="vi/I0bJuIWu-FU/hqdefault.jpg" alt="المحاضرة الخامسة في مادة رياضة (ج) د/ رشا عبد العظيم"><i class="play"></i></span><span title="المحاضرة الخامسة في مادة رياضة (ج) د/ رشا عبد العظيم">المحاضرة الخامسة في مادة رياضة (ج) د/ رشا عبد العظيم</span></a></div></li><li><div><a href="/معرض-الفيديو/قسم-العلوم-الاساسية---محاضرات-في-مادة-رياضة-ج/1008/المحاضرة-الرابعة-في-مادة-رياضة-ج" id="1008"><span><img src="vi/-29o9JYY6xA/hqdefault.jpg" alt="المحاضرة الرابعة في مادة رياضة (ج) د/ رشا عبد العظيم"><i class="play"></i></span><span title="المحاضرة الرابعة في مادة رياضة (ج) د/ رشا عبد العظيم">المحاضرة الرابعة في مادة رياضة (ج) د/ رشا عبد العظيم</span></a></div></li><li><div><a href="/معرض-الفيديو/قسم-العلوم-الاساسية---محاضرات-في-مادة-رياضة-ج/1007/المحاضرة-الثالثة-في-مادة-رياضة-ج" id="1007"><span><img src="vi/Eg2KpkVkeM8/hqdefault.jpg" alt="المحاضرة الثالثة في مادة رياضة (ج) د/ رشا عبد العظيم"><i class="play"></i></span><span title="المحاضرة الثالثة في مادة رياضة (ج) د/ رشا عبد العظيم">المحاضرة الثالثة في مادة رياضة (ج) د/ رشا عبد العظيم</span></a></div></li><li><div><a href="/معرض-الفيديو/قسم-العلوم-الاساسية---محاضرات-في-مادة-رياضة-ج/1006/المحاضرة-الثانية-في-مادة-رياضة-ج" id="1006"><span><img src="vi/QLIW2BulBus/hqdefault.jpg" alt="المحاضرة الثانية في مادة رياضة (ج) د/ رشا عبد العظيم"><i class="play"></i></span><span title="المحاضرة الثانية في مادة رياضة (ج) د/ رشا عبد العظيم">المحاضرة الثانية في مادة رياضة (ج) د/ رشا عبد العظيم</span></a></div></li><li><div><a href="/معرض-الفيديو/قسم-العلوم-الاساسية---محاضرات-في-مادة-رياضة-ج/1005/المحاضرة-الاولي-في-مادة-رياضة-ج" id="1005"><span><img src="vi/yxdomOV8Aks/hqdefault.jpg" alt="المحاضرة الاولي في مادة رياضة (ج) د/ رشا عبد العظيم"><i class="play"></i></span><span title="المحاضرة الاولي في مادة رياضة (ج) د/ رشا عبد العظيم">المحاضرة الاولي في مادة رياضة (ج) د/ رشا عبد العظيم</span></a></div></li></ul><div class="split"></div><h2>محاضرات عن ورش انتاج الفرقة الإعدادي</h2><ul class="videoList"><li><div><a href="/معرض-الفيديو/محاضرات-عن-ورش-انتاج-الفرقة-الإعدادي/1013/شرج-اجزاء-ماكينة-التفريز" id="1013"><span><img src="vi/Ecolq97UuHQ/hqdefault.jpg" alt="شرج اجزاء ماكينه التفريز"><i class="play"></i></span><span title="شرج اجزاء ماكينه التفريز">شرج اجزاء ماكينه التفريز</span></a></div></li><li><div><a href="/معرض-الفيديو/محاضرات-عن-ورش-انتاج-الفرقة-الإعدادي/1012/شرح-اجزاء-المخرطة" id="1012"><span><img src="vi/ZQLg1njCZhk/hqdefault.jpg" alt="شرح اجزاء المخرطة"><i class="play"></i></span><span title="شرح اجزاء المخرطة">شرح اجزاء المخرطة</span></a></div></li><li><div><a href="/معرض-الفيديو/محاضرات-عن-ورش-انتاج-الفرقة-الإعدادي/1011/لحام" id="1011"><span><img src="vi/pBXfUNhRZyM/hqdefault.jpg" alt="لحام"><i class="play"></i></span><span title="لحام">لحام</span></a></div></li><li><div><a href="/معرض-الفيديو/محاضرات-عن-ورش-انتاج-الفرقة-الإعدادي/1010/شرح-اجزاء-ماكينه-المقشطه" id="1010"><span><img src="vi/TVOZ3ZMEDhI/hqdefault.jpg" alt="شرح اجزاء ماكينه المقشطه"><i class="play"></i></span><span title="شرح اجزاء ماكينه المقشطه">شرح اجزاء ماكينه المقشطه</span></a></div></li></ul><div class="split"></div><h2>علوم أساسية - محاضرات في مادة فيزياء ج</h2><ul class="videoList"><li><div><a href="/معرض-الفيديو/علوم-أساسية---محاضرات-في-مادة-فيزياء-ج/1016/الحيود" id="1016"><span><img src="vi/e5sfiGiAHyM/hqdefault.jpg" alt="المحاضرة الثالثة في مادة فيزياء (ج) د/ محمد نبيل عبد السلام"><i class="play"></i></span><span title="المحاضرة الثالثة في مادة فيزياء (ج) د/ محمد نبيل عبد السلام">المحاضرة الثالثة في مادة فيزياء (ج) د/ محمد نبيل عبد السلام</span></a></div></li><li><div><a href="/معرض-الفيديو/علوم-أساسية---محاضرات-في-مادة-فيزياء-ج/1015/اشعة-اكس-انتاجها-وخصائصها" id="1015"><span><img src="vi/36s8FvlKLao/hqdefault.jpg" alt="المحاضرة الثانية في مادة فيزياء ( ج ) د/ محمد نبيل عبد السلام"><i class="play"></i></span><span title="المحاضرة الثانية في مادة فيزياء ( ج ) د/ محمد نبيل عبد السلام">المحاضرة الثانية في مادة فيزياء ( ج ) د/ محمد نبيل عبد السلام</span></a></div></li><li><div><a href="/معرض-الفيديو/علوم-أساسية---محاضرات-في-مادة-فيزياء-ج/1014/تاثير-كومبنون" id="1014"><span><img src="vi/mciCTe1tR64/hqdefault.jpg" alt="المحاضرة الأولى في مادة فيزياء (ج) د/ محمد نبيل"><i class="play"></i></span><span title="المحاضرة الأولى في مادة فيزياء (ج) د/ محمد نبيل">المحاضرة الأولى في مادة فيزياء (ج) د/ محمد نبيل</span></a></div></li></ul><div class="split"></div>
+
+        </div>
+        </div>
+    <div class="leftContent">
+        
+        <div>
+            <h4>روابط إلى</h4>
+            <a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a>
+            <a href="https://www.office.com/" target="_blank">البريد الإلكتروني</a>
+        </div>
+        <div>
+            <h4>الميديا</h4>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-1.html?display=الأخبار">الأخبار</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-2.html?display=الأحداث">الأحداث</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-3.html?display=الإعلانات">الإعلانات</a>
+            <a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a>
+            <a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديوهات</a>
+        </div>
+
+        <div>
+            <h4>التوظيف</h4>
+            <a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a>
+            <a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a>
+            <a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div id="socialDiv">
+                    <a href="https://www.youtube.com/channel/UCH2eN_qoqLx0aGD3GrrErhA" target="_blank"><i class="youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/el-minya-high-institute-for-engineering-and-technology/about/?viewAsMember=true" target="_blank"><i class="linkedin"></i></a>
+                    <a href="https://www.facebook.com/mhiet.edu.eg" target="_blank"><i class="facebook"></i></a>
+                    <a href="https://twitter.com/mhietedueg" target="_blank"><i class="twitter"></i></a>
+                </div>
+                <div id="footerLinkCont">
+                    <div id="locDiv">
+                        <a href="https://bit.ly/mhiet-location" target="_blank">
+                            <span>المنطقة الصناعية - المنيا الجديدة - المنيا<i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <img src="images/location.jpg" alt="الموقع" width="1000" height="701">
+                                <i class="route"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerLinksDiv" id="contactUsColumn">
+                        <h5>اتصل بنا</h5>
+                        <ul class="footerLinksUL" id="footerLinksULContact">
+                            <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي<svg><use xlink:href="/images/icons.svg#contactForm"></use></svg></a></li>
+                            <li><a href="tel:0020086-2290608"><span style="font-size:15px;font-family:Tahoma">086-2290608</span><svg><use xlink:href="/images/icons.svg#footerTelephone"></use></svg></a></li>
+                            <li><a href="mailto:admin@mhiet.edu.eg"><span style="font-size:14px">admin@mhiet.edu.eg</span><svg><use xlink:href="/images/icons.svg#footerEmail"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinksDiv" id="footerLinksColumn">
+                        <h5>روابط هامة</h5>
+                        <ul class="footerLinksUL">
+                            <li><a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a></li>
+                            <li><a href="https://www.office.com/" target="_blank">الدخول للبريد الإلكتروني</a></li>
+                            <li><a href="http://eea.org.eg/" target="_blank">نقابة المهندسين</a></li>
+                            <li><a href="http://portal.mohesr.gov.eg/" target="_blank">وزارة التعليم العالي</a></li>
+                            <li><a href="https://www.egypt.gov.eg/" target="_blank">بوابة الحكومة الالكترونية</a></li>
+                            <li><a href="https://tansik.egypt.gov.eg/application/" target="_blank">خدمات التنسيق</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div id="CR">
+                    جميع الحقوق محفوظة للمعهد العالي للهندسة والتكنولوجيا - المنيا © 2024<br>
+                    <a href="https://newvitalsoft.com" target="_blank">برمجة وتصميم نيو ڨايتل سوفت</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="hamMenu">
+        <div class="hamTop">
+            <div class="nefDiamond"></div>
+            <div class="hamEnglish">
+                <a href="video-gallery.html" id="hamEngLink">
+                    <svg><use xlink:href="/images/icons.svg#english"></use></svg>
+                    <span>English Interface</span>
+                </a>
+            </div>
+            <img src="images/nefertari.png" class="hamLogo" alt="نفرتاري" width="68" height="89">
+            <span class="hamLogoText">المعهد العالي للهندسة والتكنولوجيا</span>
+        </div>
+        <div class="hamBody">
+            <ul class="hamNav"></ul>
+        </div>
+    </div>
+    <div class="hamCirc"></div>
+    <script src="ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/util.js"></script>
+    <script type="text/javascript" src="js/sharethis.js#property=5e9e1f966f740100124ea997&product=sticky-share-buttons&cms=sop" async="async"></script>
+    
+<div id="videoMainCont"><div id="videoCont"><i id="close"></i><h3></h3><div class="sharethis-inline-share-buttons"></div><div class="clear"></div><div id="videoWrapper"></div><div id="desc"></div></div></div>
+<script type="text/javascript">
+    var url, AJAXReq, workInProcess = false, playDiv;
+    var player;
+   
+    $('#close').click(function () { closeModal(); });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) closeModal();
+    });
+
+    $('#videoMainCont').click(function (e) {
+        if (e.target.id === "videoMainCont") closeModal();
+    });
+
+    function closeModal() {
+        if ($('#dimmer').is(':visible')) {
+            $('#videoMainCont').css('z-index', '-1');
+            $('#videoCont').css('top', '-' + ($('#videoCont').outerHeight() + 2000) +'px');
+            $('#dimmer').fadeOut('fast', function () { player.destroy(); $('#videoWrapper').empty(); });
+            playDiv.show();
+        }
+    };
+
+    $('.videoList a').click(function (e) {
+        e.preventDefault();
+        if (workInProcess) return;
+
+        if (AJAXReq) { AJAXReq.abort();$('#iLoader').fadeOut('slow', function () { $(this).remove(); }); }
+        playDiv = $(this).find('.play');
+            
+        $(this).blur().parents('li').append('<div id="iLoader"><div id="aniMask"></div><div id="aniBg"></div><div id="anim"></div></div>');
+        playDiv.hide();
+        $('#iLoader').fadeIn("fast"); 
+        
+        AJAXReq = $.get('/Arabic/getVideo.ashx?id=' + $(this).prop('id'), function (d) {eval(d);});
+        workInProcess = true;
+    });
+
+    function showVideo(status, h3, vID, desc, _url) {
+        if (status == 1) {
+            $('h3').text(h3);
+            url = _url;
+            $('#desc').text(desc);
+            $('#videoWrapper').empty().append('<div id="videoPlayerDiv"></div>');
+            
+            player = new YT.Player('videoPlayerDiv', {
+                height: '100%',
+                width: '100%',
+                videoId: vID,
+                playerVars: {showinfo:0,theme:'light',rel:0,modestbranding:1,autohide:1,autoplay:0,iv_load_policy:3},
+                events: { 'onReady': onPlayerReady }
+            });
+        }
+        else {
+            alert('حدث خطأ غير متوقع.');
+            workInProcess = false;
+            $('#iLoader').fadeOut('slow', function () { $('#iLoader').remove();});
+        }
+    };
+
+    function onPlayerReady(event) {
+        $('#iLoader').fadeOut('slow', function () { $('#iLoader').remove(); 
+        $('#dimmer').fadeIn('slow', function () {
+            $('#videoMainCont').css({ zIndex: 100002, height: ($(window).height() + $(window).scrollTop()) + 'px', width: $(window).width() + 'px' });
+            $('#videoCont').animate({ 'top': $(window).scrollTop() + 'px' });
+            workInProcess = false;
+            const buttons = $(".sharethis-inline-share-buttons");
+            buttons.attr("data-url", window.location.href + url);
+            buttons.attr("data-title", $("#videoCont").find("h3").text());
+            player.playVideo();
+        });
+        });
+    };
+
+    $(window).resize(function () {  $('#videoMainCont').css({ height: ($(window).height() + $(window).scrollTop()) + 'px', width: $(window).width() + 'px' }); });
+</script>
+
+ </body>
+</html>

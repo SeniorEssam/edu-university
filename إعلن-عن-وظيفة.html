@@ -1,0 +1,822 @@
+﻿
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00A8DA">
+    <meta property="og:site_name" content="El Minya Higher Institute of Engineering & Technology">
+    <meta property="og:image" content="https://mhiet.edu.eg/images/arSocialShare.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:url" content="https://mhiet.edu.eg/%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="arCSS/s.css">
+    
+    <title>إعلن عن وظيفة</title>
+    <meta name="description" content="إعلن عن وظيفة">
+    <meta name="keywords" content="إعلن عن وظيفة، وظائف، توظيف، إضافة وظيفة">
+    <meta property="og:title" content="إعلن عن وظيفة">
+    <meta property="og:description" content="إعلن عن وظيفة">
+    <link rel="stylesheet" type="text/css" href="/arCSS/JQueryUI/jquery-ui.min.css">
+    <style>
+        h2{text-align:center}
+        #jobH2{margin-top:50px}
+        #durationDiv{display:none}
+        .dateDiv1{float:right;width:265px}
+        .dateDiv2{float:right}
+    </style>
+
+    <style>#banner{background-image: url(/images/header/random/banner2.jpg)}</style>
+</head>
+<body>
+    <div class="dropMenu"><ul class="menu" id="topDropMenu"></ul></div>
+    <div class="container">
+        <header>
+            <div class="header section">
+                
+                <div id="topLeftLinks">
+                    <a href="announce-a-job.html">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#english"></use></svg>
+                        <span>English Interface</span>
+                    </a>
+                    <a href="mailto:admin@mhiet.edu.eg">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#email"></use></svg>
+                        <span>admin@mhiet.edu.eg</span>
+                    </a>
+                    <a href="tel:002086-2290608">
+                        <svg class="topLeftIconSVG"><use xlink:href="/images/icons.svg#telephone"></use></svg>
+                        <span>086-2290608</span>
+                    </a>
+                </div>
+                <a href="index-1.htm" id="logo"><img src="images/arabic-logo.png" alt="المعهد العالي للهندسة والتكنولوجيا بالمنيا الجديدة" width="236" height="76"></a>
+                <div class="hamDiamod"></div>
+                <svg class="ham" viewbox="0 0 100 100" width="60">
+                    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                    <path class="line middle" d="m 30,50 h 40"></path>
+                    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                </svg>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li class="parentMenu">
+                    <span class="dropList">عن المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1000/%D9%86%D8%B4%D8%A3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">نشأة المعهد</a></li>
+                        <li><a href="arabic/page/1001/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9.html">نظام الدراسة</a></li>
+                        <li><a href="arabic/page/1010/%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D8%AF-%D9%88-%D8%A7%D9%84%D9%88%D9%83%D9%84%D8%A7%D8%A1.html">مكتب العميد والوكلاء</a></li>
+                        <li><a href="arabic/page/1018/%D8%A7%D9%84%D8%B1%D8%A4%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D9%88-%D8%A7%D9%84%D8%A3%D9%87%D8%AF%D8%A7%D9%81.html">الرؤية والرسالة والاهداف</a></li>
+                        <li><a href="arabic/page/1022/%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9.html">المجلة العلمية</a></li>
+                        <li><a href="arabic/page/1015/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9.html">خدمة المجتمع</a></li>
+                        <li><a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a></li>
+                        <li><a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديو</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA.html">الأخبار والأحداث والإعلانات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أقسام المعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1004/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9.html">قسم العلوم الأساسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1001/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D8%A9.html">قسم الهندسة المدنية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1000/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9.html">قسم الهندسة المعمارية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1002/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA.html">قسم الهندسة الكهربية والحاسبات</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D9%82%D8%B3%D8%A7%D9%85/1003/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D8%AA%D8%B1%D9%88%D9%86%D9%83%D8%B3.html">قسم الهندسة الميكانيكية – ميكاترونكس</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">أعضاء هيئة التدريس</span>
+                    <ul class="subMenu">
+                        <li><a href="https://staffportal.mhiet.edu.eg" target="_blank">مواقع أعضاء هيئة التدريس</a></li>
+                        <li><a href="https://www.researchgate.net/institution/El_Minya_High_Institute_For_Engineering_and_Technology" target="_blank">MHIET ResearchGate</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الالتحاق بالمعهد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1017/%D8%A7%D9%84%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%82-%D9%84%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">الالتحاق للدراسة بالمعهد</a></li>
+                        <li><a href="arabic/page/1020/%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الرسوم الدراسية</a></li>
+                        <li><a href="%D8%A7%D9%84%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%B1%D8%B1%D8%A9.html">الاسئلة الشائعة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الطلاب والخريجون</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D9%88-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%88%D9%86.html">تسجيل الدخول</a></li>
+                        <li><a href="%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.html">المكتبة الإلكترونية</a></li>
+                        <li><a href="arabic/page/1006/%D8%A5%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">إتحاد الطلاب</a></li>
+                        <li><a href="arabic/page/1009/%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">رعاية الطلاب</a></li>
+                        <li><a href="arabic/page/1002/%D8%A7%D9%84%D8%B3%D9%83%D9%86.html">السكن</a></li>
+                        <li><a href="arabic/page/1003/%D8%A7%D9%84%D9%86%D9%82%D9%84-%D9%88-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A7%D8%AA.html">النقل</a></li>
+                        <li><a href="arabic/page/1004/%D8%A7%D9%84%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A.html">التأمين الطبي</a></li>
+                        <li><a href="arabic/page/1005/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.html">التدريب</a></li>
+                        <li><a href="arabic/page/1016/%D9%85%D9%83%D8%AA%D8%A8-%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%AC%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D9%87%D8%AF.html">مكتب الخريجين</a></li>
+                        <li><a href="%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC.html">مشاريع التخرج</a></li>
+                        <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجودة والاعتماد</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/quality-certification/1007/about-quality.html">عن الجودة</a></li><li><a href="arabic/quality-certification/1008/quality-unit-committees.html">لجان وحدة الجودة</a></li><li><a href="arabic/quality-certification/1009/opinion-polls-and-their-results.html">نماذج استطلاع الراي</a></li><li><a href="arabic/quality-certification/1010/quality-attachments.html">الإصدارات والمرفقات</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">التوظيف</span>
+                    <ul class="subMenu">
+                        <li><a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a></li>
+                        <li><a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a></li>
+                        <li><a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الجداول</span>
+                    <ul class="subMenu">
+                      <li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1005/%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9.html">الجداول الدراسية</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1006/%D8%AC%D8%AF%D8%A7%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جداول إمتحانات نهاية الفصل</a></li><li><a href="%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D9%88%D9%84/1007/%D8%AC%D8%AF%D9%88%D9%84-%D8%A5%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D9%86%D8%AA%D8%B5%D9%81-%D8%A7%D9%84%D9%81%D8%B5%D9%84.html">جدول إمتحانات منتصف الفصل</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">الإدارات</span>
+                    <ul class="subMenu">
+                        <li><a href="arabic/page/1011/%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA.html">الحسابات</a></li>
+                        <li><a href="arabic/page/1007/%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html">شئون الطلاب</a></li>
+                        <li><a href="arabic/page/1012/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9.html">الموارد البشرية</a></li>
+                        <li><a href="arabic/page/1014/%D8%A7%D9%84%D8%B4%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9.html">الشئون القانونية</a></li>
+                        <li><a href="arabic/page/1013/%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9.html">العلاقات العامة</a></li>
+                        <li><a href="arabic/page/1008/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.html">تكنولوجيا المعلومات</a></li>
+                        <li><a href="arabic/page/1021/%D9%88%D8%AD%D8%AF%D8%A9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%B2%D9%85%D8%A7%D8%AA-%D9%88-%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%B1%D8%AB.html">وحدة إدارة الأزمات والكوارث</a></li>
+                    </ul>
+                </li>
+                <li class="parentMenu">
+                    <span class="dropList">مرفقات هامة</span>
+                    <ul class="subMenu">
+                        <li><a href="%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%D8%A7%D8%AA/1004/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8.html">دليل الطالب</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="banner">
+        <div id="headHD">
+            <div class="diamondTails diamondTailsLight">
+                <span id="headSpan" class="circle">التوظيف</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height:700px;text-align:right">
+    <div style="width:100%">
+    <div class="rightContent">
+        <h1>
+           إعلن عن وظيفة
+        </h1>
+        <div id="bodyRight">
+            
+    
+    <form name="frm" method="post" action="./إعلن-عن-وظيفة" id="frm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE4NTIyMDYzNA8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAmYPZBYEAicPEGQPFgRmAgECAgIDFgQQBQo82KXYrtiq2LE+ZWcQBQrYpdiv2KfYsdmKBQIyNWcQBR7Yo9i52LbYp9ihINmH2YrYptipINiq2K/YsdmK2LMFAjI3ZxAFJdiq2YPZhtmI2YTZiNis2YrYpyDYp9mE2YXYudmE2YjZhdin2KoFAjI2Z2RkAi8PEGQPFgNmAgECAhYDEAUKPNil2K7YqtixPmVnEAUI2K/Yp9im2YUFATFnEAUI2YXYpNmC2KoFATJnZGRkjCkLHSz5UynLKSkQcMl8VYVE6eYG+M1eEvBzeO1pKfI=">
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6674387F">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACQ9BdMMTJir8vlBeLlAchLMqoQKCWNHb0PKbuaPChKGSXkgPUFBYSBniTynUKVz+3Cbb3zQJ9SsMzbsFCEEtU8wubam1nwQJWqXm0VYRPNF38LIArrFo0b6CSoc+Luj/9QakNHKGU4Ikr4mrMRsF/1lsMbKOyvGkH9SHSepCfcwvJpu48qZHMK5jY05JIHcPI29MZMJXp2NEbEDO+Zl/TNEOs+M9nQ5RkQEBEWLPhDUwuEJlmCiR3meIQiduztMyS6/euhlSUQLMc+S2WdIO1ptS/7Z0haK4yi3rQCFinontC8OF8GmQ4PSLAwKbTtvnR945l6xt0skM/nX3MUliIK68NgaRcYPE9t5MtjNmMUL9QEFXiUvPQ7sMNrLRohQ2vp2P9r8MqSoGX7nS0cBF7mXND6aP7fyAejH/ltDIn032A+Kz36A72ITa/yrj04+6TR/4mdxgGkapyJOlHsr2GbYT5xcw+fQzU++dthdJruZ0Wa0apJZYropXqjIAVvV16kU2ZUxU3nxX87waQUn7vepLzrZ9znZo8g7amV7vD5Zc4JQhNZemEE3ASCXMxk5hUzb1UwCmn9pbZKufBJmakeyRPwQu1YgzEbK0thpVQUe/QW6HEDRvZ+mv/YITzTcWUpdoopssKc/6f89+WaGfsxJ2mWa46I2dwosepC9oAzH2xtID03zneQDwVZayc01f1cRJG9OhgIX0+A2NpRj6uQgQ4GMM40VufgV5Vu6Q85NwdxsiaQbzip7CZnPol2JaVnAv7wTzpTJFFCUcd0C1b12KK7oYVUgcoUDiDp6uTxZkg==">
+        <div id="mask"><div class="preloader"></div></div>
+        <h2>بيانات صاحب الوظيفة</h2>
+        <div class="row ar">
+            <div class="rowLbl">
+                إســم الشــركة
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$arEmployerName" type="text" maxlength="75" id="arEmployerName">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+        <div class="row en">
+            <div class="rowLbl">
+                Employer Name
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$enEmployerName" type="text" maxlength="75" id="enEmployerName">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+        <div class="row ar">
+            <div class="rowLbl">
+                إســم الناشــىء
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$arInitiatorName" type="text" maxlength="50" id="arInitiatorName">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+        <div class="row en">
+            <div class="rowLbl">
+                Initiator Name
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$enInitiatorName" type="text" maxlength="50" id="enInitiatorName">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+        <div class="row en">
+            <div class="rowLbl">
+                * البــريد الإلكــترونى	
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$email" type="text" maxlength="50" id="email" class="ctrl">
+                <div class="editIcon"></div>
+                
+                
+            </div>
+        </div>
+        <div class="row ar">
+            <div class="rowLbl">
+                عنــوان الشــركة
+            </div>
+            <div class="rowCont rowTextarea">
+                <div class="counterBar"><div class="barbox"><div class="progressbar"></div></div><div class="count"></div>&nbsp;<div class="char">الحروف المتبقية</div></div>
+                <div class="textareaCont">
+                    <textarea name="ctl00$body$arAddress" rows="2" cols="20" id="arAddress" onchange="textAreaLimits(&#39;arAddress&#39;, 200, 0)">
+</textarea>
+                    <div class="editIconT"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row en">
+            <div class="rowLbl">
+                Factory Address
+            </div>
+            <div class="rowCont">
+                <div class="counterBar"><div class="barbox"><div class="progressbar"></div></div><div class="count"></div>&nbsp;<div class="char">الحروف المتبقية</div></div>
+                <div class="textareaCont">
+                    <textarea name="ctl00$body$enAddress" rows="2" cols="20" id="enAddress" onchange="textAreaLimits(&#39;enAddress&#39;, 200, 1)">
+</textarea>
+                    <div class="editIconT"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row en">
+            <div class="rowLbl">
+                التليفون
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$telephone" type="text" maxlength="16" id="telephone">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                الفاكس
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$fax" type="text" maxlength="16" id="fax">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+
+        <h2 id="jobH2">وصف الوظيفة</h2>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                المــكان
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$arLocation" type="text" maxlength="100" id="arLocation">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                Location
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$enLocation" type="text" maxlength="100" id="enLocation">
+                <div class="editIcon"></div>
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                *  المسمى الوظيفي
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$arTitle" type="text" maxlength="100" id="arTitle">
+                <div class="editIcon"></div>
+                
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                * Job Title
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$enTitle" type="text" maxlength="100" id="enTitle">
+                <div class="editIcon"></div>
+                
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                بيــانــات الوظــيفة
+            </div>
+            <div class="rowCont">
+                <textarea name="ctl00$body$arDesc" rows="2" cols="20" id="arDesc">
+</textarea>
+                <div class="editIconT"></div>
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                Job Description
+            </div>
+            <div class="rowCont">
+                <textarea name="ctl00$body$enDesc" rows="2" cols="20" id="enDesc">
+</textarea>
+                <div class="editIconT"></div>
+            </div>
+        </div>
+
+       <div class="row ar">
+            <div class="rowLbl">
+                * نــوع الوظــيفة
+            </div>
+            <div class="rowCont">
+                <select name="ctl00$body$jobType" id="jobType">
+	<option value="">&lt;إختر&gt;</option>
+	<option value="25">إداري</option>
+	<option value="27">أعضاء هيئة تدريس</option>
+	<option value="26">تكنولوجيا المعلومات</option>
+
+</select>
+                <div class="editIconT"></div>
+                
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                المتطلبات
+            </div>
+            <div class="rowCont">
+                <div class="counterBar"><div class="barbox"><div class="progressbar"></div></div><div class="count"></div>&nbsp;<div class="char">الحروف المتبقية</div></div>
+                <div class="textareaCont">
+                    <textarea name="ctl00$body$arReq" rows="2" cols="20" id="arReq" onchange="textAreaLimits(&#39;arReq&#39;, 2000, 2)">
+</textarea>
+                    <div class="editIconT"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                Requirements
+            </div>
+            <div class="rowCont">
+                <div class="counterBar"><div class="barbox"><div class="progressbar"></div></div><div class="count"></div>&nbsp;<div class="char">الحروف المتبقية</div></div>
+                <div class="textareaCont">
+                    <textarea name="ctl00$body$enReq" rows="2" cols="20" id="enReq" onchange="textAreaLimits(&#39;enReq&#39;, 2000, 3)">
+</textarea>
+                    <div class="editIconT"></div>
+                </div>
+            </div>
+        </div>
+
+       <div class="row ar">
+            <div class="rowLbl">
+                * النــظام الوظــيفي
+            </div>
+            <div class="rowCont">
+                <select name="ctl00$body$package" id="package">
+	<option value="">&lt;إختر&gt;</option>
+	<option value="1">دائم</option>
+	<option value="2">مؤقت</option>
+
+</select>
+                <div class="editIconT"></div>
+                
+            </div>
+        </div>
+
+        <div class="row ar" id="durationDiv">
+            <div class="rowLbl">
+                 * تاريخ بداية الوظيفة
+            </div>
+            <div class="rowCont dateRange">
+                <div class="dateDiv1">
+                    <label>من يوم</label> 
+                    <input name="ctl00$body$fromDate" type="text" id="fromDate" maxlength="10" class="dateTxt">
+                    <div class="clearfix"></div>
+                    
+                </div>
+                <div class="dateDiv2">
+                    <label>حتى يوم</label> 
+                    <input name="ctl00$body$toDate" type="text" id="toDate" maxlength="10" class="dateTxt">
+                    <div class="clearfix"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                 * كود الوظيفة
+            </div>
+            <div class="rowCont">
+                <input name="ctl00$body$code" type="text" maxlength="12" id="code">
+                <div class="editIcon"></div>
+                
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                 ساعــات العــمل
+            </div>
+            <div class="rowCont">
+                <label>من</label>
+                <div class="hours">
+                    <input name="ctl00$body$hoursFrom" type="text" maxlength="20" id="hoursFrom">
+                    <div class="editIcon"></div>
+                </div>
+
+                <label>إلى</label>                
+                <div class="hours">
+                    <input name="ctl00$body$hoursTo" type="text" maxlength="20" id="hoursTo">
+                    <div class="editIcon"></div>
+                </div>
+                
+                <label>الساعات(أختياري)</label>
+                <div class="hours">
+                    <input name="ctl00$body$hours" type="text" maxlength="20" id="hours">
+                    <div class="editIcon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                 * تاريخ صلاحية الوظيفة
+            </div>
+            <div class="rowCont dateRange">
+                <div class="dateDiv1">
+                    <label>من يوم</label> 
+                    <input name="ctl00$body$validFrom" type="text" id="validFrom" maxlength="10" class="dateTxt">
+                    <div class="clearfix"></div>
+                    
+                </div>
+                <div class="dateDiv1">
+                    <label>حتى يوم</label> 
+                    <input name="ctl00$body$validTo" type="text" id="validTo" maxlength="10" class="dateTxt">
+                    <div class="clearfix"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row ar">
+            <div class="rowLbl">
+                الــتعليــقات
+            </div>
+            <div class="rowCont">
+                <textarea name="ctl00$body$arComments" rows="2" cols="20" id="arComments">
+</textarea>
+                <div class="editIconT"></div>
+            </div>
+        </div>
+
+        <div class="row en">
+            <div class="rowLbl">
+                Comments
+            </div>
+            <div class="rowCont">
+                <textarea name="ctl00$body$enComments" rows="2" cols="20" id="enComments">
+</textarea>
+                <div class="editIconT"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="btnCont">
+            <div class="btnWrapper addBtn"><input type="submit" name="ctl00$body$subBtn" value="إضافة الوظيفة" onclick="doSubmit();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$body$subBtn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="subBtn" class="btn"><i></i></div>
+        </div>
+    </form>
+
+        </div>
+        </div>
+    <div class="leftContent">
+        
+        <div>
+            <h4>روابط إلى</h4>
+            <a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a>
+            <a href="https://www.office.com/" target="_blank">البريد الإلكتروني</a>
+        </div>
+        <div>
+            <h4>الميديا</h4>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-1.html?display=الأخبار">الأخبار</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-2.html?display=الأحداث">الأحداث</a>
+            <a href="%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-3.html?display=الإعلانات">الإعلانات</a>
+            <a href="%D8%A3%D9%84%D8%A8%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%88%D8%B1.html">ألبوم الصور</a>
+            <a href="%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88.html">معرض الفيديوهات</a>
+        </div>
+
+        <div>
+            <h4>التوظيف</h4>
+            <a href="%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AE%D8%A7%D9%84%D9%8A%D8%A9.html">وظائف خالية</a>
+            <a href="%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81.html">مكتب التوظيف</a>
+            <a href="%D8%A5%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%A9.html">إعلن عن وظيفة</a>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div id="socialDiv">
+                    <a href="https://www.youtube.com/channel/UCH2eN_qoqLx0aGD3GrrErhA" target="_blank"><i class="youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/el-minya-high-institute-for-engineering-and-technology/about/?viewAsMember=true" target="_blank"><i class="linkedin"></i></a>
+                    <a href="https://www.facebook.com/mhiet.edu.eg" target="_blank"><i class="facebook"></i></a>
+                    <a href="https://twitter.com/mhietedueg" target="_blank"><i class="twitter"></i></a>
+                </div>
+                <div id="footerLinkCont">
+                    <div id="locDiv">
+                        <a href="https://bit.ly/mhiet-location" target="_blank">
+                            <span>المنطقة الصناعية - المنيا الجديدة - المنيا<i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <img src="images/location.jpg" alt="الموقع" width="1000" height="701">
+                                <i class="route"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerLinksDiv" id="contactUsColumn">
+                        <h5>اتصل بنا</h5>
+                        <ul class="footerLinksUL" id="footerLinksULContact">
+                            <li><a href="%D8%A5%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7.html">نموذج الاتصال والمقترحات والشكاوي<svg><use xlink:href="/images/icons.svg#contactForm"></use></svg></a></li>
+                            <li><a href="tel:0020086-2290608"><span style="font-size:15px;font-family:Tahoma">086-2290608</span><svg><use xlink:href="/images/icons.svg#footerTelephone"></use></svg></a></li>
+                            <li><a href="mailto:admin@mhiet.edu.eg"><span style="font-size:14px">admin@mhiet.edu.eg</span><svg><use xlink:href="/images/icons.svg#footerEmail"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinksDiv" id="footerLinksColumn">
+                        <h5>روابط هامة</h5>
+                        <ul class="footerLinksUL">
+                            <li><a href="%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A.html">توقيتات العام الدراسي</a></li>
+                            <li><a href="https://www.office.com/" target="_blank">الدخول للبريد الإلكتروني</a></li>
+                            <li><a href="http://eea.org.eg/" target="_blank">نقابة المهندسين</a></li>
+                            <li><a href="http://portal.mohesr.gov.eg/" target="_blank">وزارة التعليم العالي</a></li>
+                            <li><a href="https://www.egypt.gov.eg/" target="_blank">بوابة الحكومة الالكترونية</a></li>
+                            <li><a href="https://tansik.egypt.gov.eg/application/" target="_blank">خدمات التنسيق</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div id="CR">
+                    جميع الحقوق محفوظة للمعهد العالي للهندسة والتكنولوجيا - المنيا © 2024<br>
+                    <a href="https://newvitalsoft.com" target="_blank">برمجة وتصميم نيو ڨايتل سوفت</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="hamMenu">
+        <div class="hamTop">
+            <div class="nefDiamond"></div>
+            <div class="hamEnglish">
+                <a href="announce-a-job.html" id="hamEngLink">
+                    <svg><use xlink:href="/images/icons.svg#english"></use></svg>
+                    <span>English Interface</span>
+                </a>
+            </div>
+            <img src="images/nefertari.png" class="hamLogo" alt="نفرتاري" width="68" height="89">
+            <span class="hamLogoText">المعهد العالي للهندسة والتكنولوجيا</span>
+        </div>
+        <div class="hamBody">
+            <ul class="hamNav"></ul>
+        </div>
+    </div>
+    <div class="hamCirc"></div>
+    <script src="ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/util.js"></script>
+    <script type="text/javascript" src="js/sharethis.js#property=5e9e1f966f740100124ea997&product=sticky-share-buttons&cms=sop" async="async"></script>
+    
+<script type="text/javascript" src="/JS/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/JS/maskInputs.js"></script>
+<script>
+    if ($("#frm").length) {
+        $("#arEmployerName").focus();
+        textAreaLimits('arAddress', 200, 0);
+        textAreaLimits('enAddress', 200, 1);
+        textAreaLimits('arReq', 2000, 2);
+        textAreaLimits('enReq', 2000, 3);
+
+        $("#fromDate, #toDate, #validFrom, #validTo").datepicker({
+            showAnim: 'slide',
+            showOn: "button",
+            buttonImage: "/images/calendar.png",
+            buttonImageOnly: true,
+            dateFormat: 'dd/mm/yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '2024:2074',
+            minDate: 0
+        }).mask("99/99/9999");
+
+
+        var currDate = '12/9/2024';
+
+        function validateFromDate(sender, args) {
+            if (!$("#durationDiv").is(":visible")) { args.IsValid = true; return }
+            var dStamp = $('#fromDate').val();
+
+            if (dStamp == '' || dStamp == '__/__/____') {
+                args.IsValid = false;
+                $('#dSv').text('التاريخ مطلوب.');
+                return;
+            }
+            else {
+                var validDate = false
+                try {
+
+                    dStamp = $.datepicker.parseDate('dd/mm/yy', dStamp);
+
+                    validDate = true;
+
+                }
+                catch (e) { }
+                if (validDate == false) {
+                    $('#dSv').text('التاريخ غير صحيح.');
+                    args.IsValid = false;
+                    return;
+                }
+                else {
+                    var today = $.datepicker.parseDate('dd/mm/yy', currDate);
+
+                    if (dStamp < today) {
+                        $('#dSv').text('أقل من تاريخ اليوم.');
+                        args.IsValid = false;
+                        return;
+                    }
+                    var cDate = $('#toDate').val();
+                    if ($('#nDv').is(':visible') == false && cDate != '' && cDate != '__/__/____') {
+                        cDate = $.datepicker.parseDate('dd/mm/yy', cDate);
+                        if (dStamp > cDate) {
+                            $('#dSv').text('أكبر من تاريخ النهاية.');
+                            args.IsValid = false;
+                            return;
+                        }
+
+                    }
+
+
+                }
+            }
+
+            args.IsValid = true;
+        }
+
+
+        function validateToDate(sender, args) {
+            if (!$("#durationDiv").is(":visible")) { args.IsValid = true; return }
+            var cDate = $('#toDate').val();
+            if (cDate == '' || cDate == '__/__/____') {
+                $('#nDv').text('التاريخ مطلوب.');
+                args.IsValid = false;
+                return;
+            }
+            else {
+                var validDate = false
+                try {
+                    cDate = $.datepicker.parseDate('dd/mm/yy', cDate);
+                    validDate = true;
+
+                }
+                catch (e) { }
+                if (validDate == false) {
+                    $('#nDv').text('التاريخ غير صحيح.');
+                    args.IsValid = false;
+                    return;
+                }
+                var today = $.datepicker.parseDate('dd/mm/yy', currDate);
+                if (cDate < today) {
+                    $('#nDv').text('أقل من تاريخ اليوم.');
+                    args.IsValid = false;
+                    return;
+                }
+                var fromDate = dStamp = $.datepicker.parseDate('dd/mm/yy', $('#fromDate').val());
+                if (fromDate > cDate) {
+                    $('#nDv').text('أقل من تاريخ البداية.');
+                    args.IsValid = false;
+                    return;
+                }
+            }
+            args.IsValid = true;
+        }
+
+
+        function validateFromDate2(sender, args) {
+            var dStamp = $('#validFrom').val();
+
+            if (dStamp == '' || dStamp == '__/__/____') {
+                args.IsValid = false;
+                $('#vfV').text('التاريخ مطلوب.');
+                return;
+            }
+            else {
+                var validDate = false
+                try {
+
+                    dStamp = $.datepicker.parseDate('dd/mm/yy', dStamp);
+
+                    validDate = true;
+
+                }
+                catch (e) { }
+                if (validDate == false) {
+                    $('#vfV').text('التاريخ غير صحيح.');
+                    args.IsValid = false;
+                    return;
+                }
+                else {
+                    var today = $.datepicker.parseDate('dd/mm/yy', currDate);
+
+                    if (dStamp < today) {
+                        $('#vfV').text('أقل من تاريخ اليوم.');
+                        args.IsValid = false;
+                        return;
+                    }
+                    var cDate = $('#validTo').val();
+                    if ($('#vfV').is(':visible') == false && cDate != '' && cDate != '__/__/____') {
+                        cDate = $.datepicker.parseDate('dd/mm/yy', cDate);
+                        if (dStamp > cDate) {
+                            $('#vfV').text('أكبر من تاريخ النهاية.');
+                            args.IsValid = false;
+                            return;
+                        }
+
+                    }
+
+
+                }
+            }
+
+            args.IsValid = true;
+        }
+
+
+        function validateToDate2(sender, args) {
+            var cDate = $('#validTo').val();
+            if (cDate == '' || cDate == '__/__/____') {
+                $('#vtV').text('التاريخ مطلوب.');
+                args.IsValid = false;
+                return;
+            }
+            else {
+                var validDate = false
+                try {
+                    cDate = $.datepicker.parseDate('dd/mm/yy', cDate);
+                    validDate = true;
+
+                }
+                catch (e) { }
+                if (validDate == false) {
+                    $('#vtV').text('التاريخ غير صحيح.');
+                    args.IsValid = false;
+                    return;
+                }
+                var today = $.datepicker.parseDate('dd/mm/yy', currDate);
+                if (cDate < today) {
+                    $('#vtV').text('أقل من تاريخ اليوم.');
+                    args.IsValid = false;
+                    return;
+                }
+                var fromDate = dStamp = $.datepicker.parseDate('dd/mm/yy', $('#validFrom').val());
+                if (fromDate > cDate) {
+                    $('#vtV').text('أقل من تاريخ البداية.');
+                    args.IsValid = false;
+                    return;
+                }
+            }
+            args.IsValid = true;
+        }
+
+        $("#package").on("change", function () {
+            if ($(this).prop('selectedIndex') == 2)
+                $("#durationDiv").show();
+            else
+                $("#durationDiv").hide();
+        });
+    }
+    else {
+        setTimeout(function () { $('html, body').animate({ scrollTop: $("h1").offset().top }, 1000); }, { duration: 500, easing: "linear" });
+        if(window.history.replaceState){window.history.replaceState(null,null,window.location.href)}
+    }
+</script>		
+
+ </body>
+</html>

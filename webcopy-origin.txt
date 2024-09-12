@@ -1,0 +1,1028 @@
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ajax\libs\jquery\1.8.3\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ajax\libs\gsap\1.20.3\TweenMax.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ajax\libs\jquery-easing\1.3\jquery.easing.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ajax\libs\ScrollMagic\2.0.7\ScrollMagic.min.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-1.8.3.min.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\jquery-1.8.3.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css?family=ABeeZee&display=swap
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\css-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ea\droidarabickufi\v6\DroidKufi-Regular.eot
+Content Type: font/eot
+
+Uri: https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot?
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ea\droidarabickufi\v6\DroidKufi-Regular-1.eot
+Content Type: font/eot
+
+Uri: https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ea\droidarabickufi\v6\DroidKufi-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ea\droidarabickufi\v6\DroidKufi-Regular.woff
+Content Type: font/woff
+
+Uri: https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ea\droidarabickufi\v6\DroidKufi-Regular.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/abeezee/v22/esDR31xSG-6AGleN2tWklQ.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\s\abeezee\v22\esDR31xSG-6AGleN2tWklQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0Uw.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\s\rubik\v28\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0Uw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFV0Uw.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\s\rubik\v28\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFV0Uw.ttf
+Content Type: font/ttf
+
+Uri: https://i1.ytimg.com/vi/-29o9JYY6xA/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\-29o9JYY6xA\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/36s8FvlKLao/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\36s8FvlKLao\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/6crY8LLlci8/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\6crY8LLlci8\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/9vqB5HWwevI/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\9vqB5HWwevI\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/auBn9VIhhPQ/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\auBn9VIhhPQ\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/Cb15aF4Eosw/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\Cb15aF4Eosw\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/dX_5BvWHo_4/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\dX_5BvWHo_4\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/d_N5Yr3CKSw/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\d_N5Yr3CKSw\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/e5sfiGiAHyM/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\e5sfiGiAHyM\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/Ecolq97UuHQ/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\Ecolq97UuHQ\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/Eg2KpkVkeM8/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\Eg2KpkVkeM8\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/Eu8mXhhlx7U/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\Eu8mXhhlx7U\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/foCZCkungoA/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\foCZCkungoA\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/I0bJuIWu-FU/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\I0bJuIWu-FU\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/im4wET7LWsU/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\im4wET7LWsU\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/IT_zVTtkCIk/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\IT_zVTtkCIk\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/M95w1kwLJZA/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\M95w1kwLJZA\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/mciCTe1tR64/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\mciCTe1tR64\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/pBXfUNhRZyM/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\pBXfUNhRZyM\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/PUmhtqAYmiw/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\PUmhtqAYmiw\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/PYuh-u9W7s0/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\PYuh-u9W7s0\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/QLIW2BulBus/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\QLIW2BulBus\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/tSiwrlfAk9E/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\tSiwrlfAk9E\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/TVOZ3ZMEDhI/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\TVOZ3ZMEDhI\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/VEX83IFATWI/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\VEX83IFATWI\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/WkzC_f7NYhs/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\WkzC_f7NYhs\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/yHO_KYvtle0/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\yHO_KYvtle0\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/yxdomOV8Aks/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\yxdomOV8Aks\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/z89XmxU3sgs/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\z89XmxU3sgs\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/zlz7GaKQKuQ/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\zlz7GaKQKuQ\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://i1.ytimg.com/vi/ZQLg1njCZhk/hqdefault.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\vi\ZQLg1njCZhk\hqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\index-1.htm
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/ألبوم-الصور
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ألبوم-الصور.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/ألبوم-الصور/1016/وحدة-ضمان-الجودة-والتطوير-المستمر
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ألبوم-الصور\1016\وحدة-ضمان-الجودة-والتطوير-المستمر.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/ألبوم-الصور/1017/المكتبات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ألبوم-الصور\1017\المكتبات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/ألبوم-الصور/1018/النقل-والمواصلات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\ألبوم-الصور\1018\النقل-والمواصلات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/إتصل-بنا
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\إتصل-بنا.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/إعلن-عن-وظيفة
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\إعلن-عن-وظيفة.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأخبار-الأحداث-الإعلانات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأخبار-الأحداث-الإعلانات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأخبار-الأحداث-الإعلانات?display=الأحداث
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأخبار-الأحداث-الإعلانات-2.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأخبار-الأحداث-الإعلانات?display=الأخبار
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأخبار-الأحداث-الإعلانات-1.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأخبار-الأحداث-الإعلانات?display=الإعلانات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأخبار-الأحداث-الإعلانات-3.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأسئلة-المتكررة
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأسئلة-المتكررة.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأقسام/1000/قسم-الهندسة-المعمارية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأقسام\1000\قسم-الهندسة-المعمارية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأقسام/1001/قسم-الهندسة-المدنية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأقسام\1001\قسم-الهندسة-المدنية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأقسام/1002/قسم-الهندسة-الكهربية-و-الحاسبات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأقسام\1002\قسم-الهندسة-الكهربية-و-الحاسبات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأقسام/1003/قسم-الهندسة-الميكانيكية-ميكاترونكس
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأقسام\1003\قسم-الهندسة-الميكانيكية-ميكاترونكس.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الأقسام/1004/قسم-العلوم-الأساسية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الأقسام\1004\قسم-العلوم-الأساسية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الجداول/1005/الجداول-الدراسية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الجداول\1005\الجداول-الدراسية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الجداول/1006/جداول-إمتحانات-نهاية-الفصل
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الجداول\1006\جداول-إمتحانات-نهاية-الفصل.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/الجداول/1007/جدول-إمتحانات-منتصف-الفصل
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\الجداول\1007\جدول-إمتحانات-منتصف-الفصل.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/المرفقات/1004/دليل-الطالب
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\المرفقات\1004\دليل-الطالب.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/المكتبة-الإلكترونية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\المكتبة-الإلكترونية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/تسجيل-الدخول-للطلاب-و-الخريجون
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\تسجيل-الدخول-للطلاب-و-الخريجون.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/توقيتات-العام-الدراسي
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\توقيتات-العام-الدراسي.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/مشاريع-التخرج
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\مشاريع-التخرج.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التسجيل-الإلكتروني-للمقررات/1019/تسليم-بطاقات-التسجيل-للمرشد
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التسجيل-الإلكتروني-للمقررات\1019\تسليم-بطاقات-التسجيل-للمرشد.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التسجيل-الإلكتروني-للمقررات/1020/الدخول-علي-نظام-ابن-الهيثم
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التسجيل-الإلكتروني-للمقررات\1020\الدخول-علي-نظام-ابن-الهيثم.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1021/strategic-planning
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1021\strategic-planning.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1022/standard-leadership
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1022\standard-leadership.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1023/students-graduates
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1023\students-graduates.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1024/scientific-research-scientific-scientifi
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1024\scientific-research-scientific-scientifi.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1025/Community-participation
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1025\Community-participation.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1026/Teaching-Learning
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1026\Teaching-Learning.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1027/Academic-standards-and-programs
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1027\Academic-standards-and-programs.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1028/Financial-and-Material-Resources
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1028\Financial-and-Material-Resources.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1029/Management-Standard
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1029\Management-Standard.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1030/Faculty-Standard
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1030\Faculty-Standard.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعريف-بمعايير-الجودة-والإعتماد/1031/Quality-Management-and-Development
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعريف-بمعايير-الجودة-والإعتماد\1031\Quality-Management-and-Development.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعليم-الإلكتروني-علي-Microsoft-Teams/1017/تنشيط-الحساب-الأكاديمي
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعليم-الإلكتروني-علي-Microsoft-Teams\1017\تنشيط-الحساب-الأكاديمي.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/التعليم-الإلكتروني-علي-Microsoft-Teams/1018/Microsoft-Teams-متابعة-المحاضرات-علي
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\التعليم-الإلكتروني-علي-Microsoft-Teams\1018\Microsoft-Teams-متابعة-المحاضرات-علي.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/المسابقات-والندوات-العلمية/1001/الفائزين-في-مسابقة-قسم-الهندسة-المعمارية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\المسابقات-والندوات-العلمية\1001\الفائزين-في-مسابقة-قسم-الهندسة-المعمارية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/المسابقات-والندوات-العلمية/1002/تجارب-الطلاب-بقسم-هندسة-الميكاترونكس
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\المسابقات-والندوات-العلمية\1002\تجارب-الطلاب-بقسم-هندسة-الميكاترونكس.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/المسابقات-والندوات-العلمية/1003/قسم-الهندسة-الكهربية-والحاسبات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\المسابقات-والندوات-العلمية\1003\قسم-الهندسة-الكهربية-والحاسبات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/معرض-الفيديو/المسابقات-والندوات-العلمية/1004/السيارات-ذاتية-القيادة
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\معرض-الفيديو\المسابقات-والندوات-العلمية\1004\السيارات-ذاتية-القيادة.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/مكتب-التوظيف
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\مكتب-التوظيف.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/وظائف-خالية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\وظائف-خالية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/?fbclid=IwY2xjawFQLQhleHRuA2FlbQIxMAABHfbvYC01xKjP3SNQOSvVcAsuXa4erSSe3CHm9USm9tlubl0HPH_dumNwEw_aem_ki6QW4mi-Ntj1TX6HeUAjQ
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\index.htm
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/academic-calendar
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\academic-calendar.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/announce-a-job
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\announce-a-job.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\index.htm
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3250/Activate-The-Academic-Account
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3250\Activate-The-Academic-Account.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3332/MHIET-System-Login
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3332\MHIET-System-Login.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3355/Program-Desires-2024-2025
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3355\Program-Desires-2024-2025.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3362/Result-Third-semester-year-23-24
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3362\Result-Third-semester-year-23-24.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3374/NAQAAE
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3374\NAQAAE.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3405/project-Civil-Engineering-Department25
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3405\project-Civil-Engineering-Department25.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/news/3406/Acceptance-Departments-M2024
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\news\3406\Acceptance-Departments-M2024.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1000/نشأة-المعهد
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1000\نشأة-المعهد.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1001/نظام-الدراسة
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1001\نظام-الدراسة.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1002/السكن
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1002\السكن.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1003/النقل-و-المواصلات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1003\النقل-و-المواصلات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1004/التأمين-الطبي
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1004\التأمين-الطبي.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1005/التدريب
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1005\التدريب.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1006/إتحاد-الطلاب
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1006\إتحاد-الطلاب.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1007/شئون-الطلاب
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1007\شئون-الطلاب.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1008/تكنولوجيا-المعلومات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1008\تكنولوجيا-المعلومات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1009/رعاية-الطلاب
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1009\رعاية-الطلاب.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1010/مكتب-العميد-و-الوكلاء
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1010\مكتب-العميد-و-الوكلاء.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1011/الحسابات
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1011\الحسابات.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1012/الموارد-البشرية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1012\الموارد-البشرية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1013/العلاقات-العامة
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1013\العلاقات-العامة.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1014/الشئون-القانونية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1014\الشئون-القانونية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1015/خدمة-المجتمع
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1015\خدمة-المجتمع.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1016/مكتب-شئون-الخريجين-بالمعهد
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1016\مكتب-شئون-الخريجين-بالمعهد.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1017/الالتحاق-للدراسة-بالمعهد
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1017\الالتحاق-للدراسة-بالمعهد.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1018/الرؤية-و-الرسالة-و-الأهداف
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1018\الرؤية-و-الرسالة-و-الأهداف.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1020/الرسوم-الدراسية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1020\الرسوم-الدراسية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1021/وحدة-إدارة-الأزمات-و-الكوارث
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1021\وحدة-إدارة-الأزمات-و-الكوارث.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/page/1022/المجلة-العلمية
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\page\1022\المجلة-العلمية.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/quality-certification/1007/about-quality
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\quality-certification\1007\about-quality.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/quality-certification/1008/quality-unit-committees
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\quality-certification\1008\quality-unit-committees.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/quality-certification/1009/opinion-polls-and-their-results
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\quality-certification\1009\opinion-polls-and-their-results.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arabic/quality-certification/1010/quality-attachments
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arabic\quality-certification\1010\quality-attachments.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/arCSS/s.css
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\arCSS\s.css
+Content Type: text/css
+
+Uri: https://mhiet.edu.eg/attachments/1004/Student-Guide
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\attachments\1004\Student-Guide.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/contact-us
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\contact-us.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/departments/1000/architecture-engineering-department
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\departments\1000\architecture-engineering-department.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/departments/1001/civil-engineering-department
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\departments\1001\civil-engineering-department.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/departments/1002/electrical-engineering-and-computers-departments
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\departments\1002\electrical-engineering-and-computers-departments.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/departments/1003/mechanical-engineering-department-mechatronics
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\departments\1003\mechanical-engineering-department-mechatronics.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/departments/1004/basic-sciences-department
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\departments\1004\basic-sciences-department.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/electronic-library
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\electronic-library.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/enCSS/s.css
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\enCSS\s.css
+Content Type: text/css
+
+Uri: https://mhiet.edu.eg/english/
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\index.htm
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/favicon.ico
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\favicon.ico.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3250/Activate-The-Academic-Account
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3250\Activate-The-Academic-Account.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3332/MHIET-System-Login
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3332\MHIET-System-Login.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3355/Program-Desires-2024-2025
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3355\Program-Desires-2024-2025.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3362/Result-Third-semester-year-23-24
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3362\Result-Third-semester-year-23-24.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3374/NAQAAE
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3374\NAQAAE.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3405/project-Civil-Engineering-Department25
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3405\project-Civil-Engineering-Department25.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/news/3406/Acceptance-Departments-M2024
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\news\3406\Acceptance-Departments-M2024.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1000/originating-of-the-institute
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1000\originating-of-the-institute.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1001/study-system-in-the-institute
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1001\study-system-in-the-institute.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1002/housing
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1002\housing.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1003/transportation
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1003\transportation.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1004/medical-insurance
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1004\medical-insurance.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1005/training
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1005\training.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1006/student-union
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1006\student-union.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1007/student-affairs
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1007\student-affairs.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1008/information-technology
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1008\information-technology.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1009/students-care
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1009\students-care.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1010/offices-of-the-vice-deans
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1010\offices-of-the-vice-deans.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1011/accounts
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1011\accounts.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1012/human-resources
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1012\human-resources.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1013/public-relations
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1013\public-relations.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1014/legal-affairs
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1014\legal-affairs.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1015/community-service
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1015\community-service.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1016/alumni-office
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1016\alumni-office.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1017/joining-the-institute
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1017\joining-the-institute.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1018/vision-message-and-targets
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1018\vision-message-and-targets.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1020/tuition-fees
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1020\tuition-fees.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1021/crisis-and-disaster-management-unit
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1021\crisis-and-disaster-management-unit.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/page/1022/scientific-journal
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\page\1022\scientific-journal.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/quality-certification/1007/about-quality
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\quality-certification\1007\about-quality.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/quality-certification/1008/quality-unit-committees
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\quality-certification\1008\quality-unit-committees.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/quality-certification/1009/opinion-polls
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\quality-certification\1009\opinion-polls.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/english/quality-certification/1010/quality-attachments
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\english\quality-certification\1010\quality-attachments.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/FAQ
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\FAQ.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/favicon.ico
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://mhiet.edu.eg/graduation-projects
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\graduation-projects.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/images/1.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\1.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/activeGallery.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\activeGallery.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/albums/Arabic/المكتبات/المكتبات.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\albums\Arabic\المكتبات\المكتبات.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/albums/Arabic/النقل-والمواصلات/النقل.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\albums\Arabic\النقل-والمواصلات\النقل.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/albums/Arabic/وحدة-ضمان-الجودة-والتطوير-المستمر/وحدة ضمان الجودة.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\albums\Arabic\وحدة-ضمان-الجودة-والتطوير-المستمر\وحدة ضمان الجودة.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/arabic-logo.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\arabic-logo.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/banner.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\banner.svg
+Content Type: image/svg+xml
+
+Uri: https://mhiet.edu.eg/images/ecobottom.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\ecobottom.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/english-logo.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\english-logo.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/header/ar/1/1202102111231452549863.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\ar\1\1202102111231452549863.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/ar/194/1202103090229263988797.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\ar\194\1202103090229263988797.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/ar/195/1202103090240322164002.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\ar\195\1202103090240322164002.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/ar/2/3202102100538418556867.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\ar\2\3202102100538418556867.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/random/banner4.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\random\banner4.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/random/banner7.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\random\banner7.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/header/random/banner8.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\header\random\banner8.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/lArrow.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\lArrow.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/light-tl.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\light-tl.svg
+Content Type: image/svg+xml
+
+Uri: https://mhiet.edu.eg/images/light-tr.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\light-tr.svg
+Content Type: image/svg+xml
+
+Uri: https://mhiet.edu.eg/images/location-320.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\location-320.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/location-480.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\location-480.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/location-640.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\location-640.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/location-960.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\location-960.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/location.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\location.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/nefertari.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\nefertari.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/news/الأقسام_3.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\الأقسام_3.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/الهيئة_القومية_لضمان_جودة_التعليم_والاعتماد_1.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\الهيئة_القومية_لضمان_جودة_التعليم_والاعتماد_1.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/دخول-min_1.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\دخول-min_1.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/مدني_3.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\مدني_3.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/EaQDm44XYAIeIth-min_1.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\EaQDm44XYAIeIth-min_1.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/mhiet-logo_96.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\mhiet-logo_96.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/news/mhiet-logo_98.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\news\mhiet-logo_98.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/noise.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\noise.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/opa75.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\opa75.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/pixel.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\pixel.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/rArrow.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\rArrow.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/split.gif
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\split.gif
+Content Type: image/gif
+
+Uri: https://mhiet.edu.eg/images/top-arrow.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\top-arrow.svg
+Content Type: image/svg+xml
+
+Uri: https://mhiet.edu.eg/images/video.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\video.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/webPages/اللواء محمد.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\اللواء محمد.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/webPages/نجلاء كمال.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\نجلاء كمال.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/webPages/56879259_806930399689737_7467464319622447104_n[1].png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\56879259_806930399689737_7467464319622447104_n[1].png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/webPages/Amal-Hasouna.png
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\Amal-Hasouna.png
+Content Type: image/png
+
+Uri: https://mhiet.edu.eg/images/webPages/location1-min.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\location1-min.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/images/webPages/unnamed (1)-min.jpg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\images\webPages\unnamed (1)-min.jpg
+Content Type: image/jpeg
+
+Uri: https://mhiet.edu.eg/job-vacancies
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\job-vacancies.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/JS/arabicSettings.js?i=638617766593490258
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\JS\arabicSettings.js
+Content Type: application/javascript
+
+Uri: https://mhiet.edu.eg/JS/arabicSettings.js?i=638617766610834061
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\JS\arabicSettings-1.js
+Content Type: application/javascript
+
+Uri: https://mhiet.edu.eg/JS/englishSettings.js?i=638617766607865253
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\JS\englishSettings.js
+Content Type: application/javascript
+
+Uri: https://mhiet.edu.eg/JS/util.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\JS\util.js
+Content Type: application/javascript
+
+Uri: https://mhiet.edu.eg/JS/utilEn.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\JS\utilEn.js
+Content Type: application/javascript
+
+Uri: https://mhiet.edu.eg/news-events-announcements
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\news-events-announcements.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/photo-album
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\photo-album.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/recruitment-office
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\recruitment-office.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/schedules/1005/Study-Schedules
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\schedules\1005\Study-Schedules.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/schedules/1006/Final-Exam-Schedules
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\schedules\1006\Final-Exam-Schedules.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/schedules/1007/Mid-Exam-Schedules
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\schedules\1007\Mid-Exam-Schedules.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/students-alumni-login
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\students-alumni-login.html
+Content Type: text/html
+
+Uri: https://mhiet.edu.eg/video-gallery
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\video-gallery.html
+Content Type: text/html
+
+Uri: https://platform-api.sharethis.com/js/sharethis.js
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\js\sharethis.js
+Content Type: text/javascript
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot?
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff2
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot?
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff2
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot?
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.svg
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.ttf
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\releases\v5.13.0\webfonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=ar
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\recaptcha\api.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en
+File Name: C:\Users\essam\Desktop\siteTracker\mhiet.edu.eg\recaptcha\api-1.js
+Content Type: text/javascript
+
